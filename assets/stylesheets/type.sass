@@ -1,0 +1,61 @@
+@import load
+
+@mixin has-lines($line-color)
+  position: relative
+  &:before, &:after
+    position: absolute
+    height: 5px
+    width: 250px
+    border-bottom: 1px solid $line-color
+    content: ""
+  &:before
+    margin-right: 25px
+    right: 100%
+  &:after
+    margin-left: 25px
+    left: 100%
+
+.subheader--black
+  @include has-lines($black)
+
+.subheader--white
+  @include has-lines($white)
+
+.text-link
+  font-style: italic
+  color: $red
+
+.is-superscript
+  font-size: 60%
+  vertical-align: super
+
+.for-screen-reader
+  position: absolute
+  left: -9999px
+
+.text-divider
+  margin-top: -28px
+  padding:
+    left: 6px
+    right: 16px
+  display: inline-block
+  position: relative
+  top: 8px
+  font:
+    weight: 300
+    size: 46px
+  letter-spacing: -10px
+
+  .location &
+    color: $l-gray
+
+.subheader-wrap
+  margin:
+    right: auto
+    left: auto
+  width: 250px
+  overflow: hidden
+
+.subheader-has-lines
+  margin-bottom: 30px
+  display: block

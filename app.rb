@@ -7,12 +7,6 @@ require 'compass'
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 
-helpers do
-  def h(text)
-    Rack::Utils.escape_html(text)
-  end
-end
-
 configure do
   Compass.configuration do |config|
     config.project_path = File.dirname(__FILE__)
@@ -23,4 +17,6 @@ configure do
   set :sass, Compass.sass_engine_options
 end
 
-require_relative 'routes/init'
+get '/' do
+  haml :index
+end

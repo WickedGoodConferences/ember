@@ -1,32 +1,86 @@
 !!!5
 %html
   %head
-    %title Wicked Good Ruby Conf | Boston's Annual Ruby Conference
-    %link{href: '/assets/splash/application.css', rel: 'stylesheet'}
-    %link{href: "http://fonts.googleapis.com/css?family=Lato:400,400italic,900italic", rel: "stylesheet", type: "text/css"}
-    %meta{name: 'description', content: 'Wicked Good Ruby Conf is a two day, double track Ruby conference being held in Boston, Massachusetts'}
-    %meta{name: 'keywords',    content: 'ruby, conference, rails, jruby, ios, rubymotion, postgresql'}
+    %title Wicked Good Ember Conf | Boston's First Ember Conference
+    %link{href: "/assets/application.css", rel: "stylesheet"}
+    %script{src: "/assets/application.js", type: "text/javascript"}
+    %meta{name: "description", content: ""}
+    %meta{name: "keywords", content: ""}
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", name: "viewport"}
     /[if lt IE 9]
       <script src='assets/html5shiv.js'></script>
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-39682399-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
 
   %body
-    .main
-      %img.logo{src: '/splash/script.svg'}
-      %p
-        Thanks for all the support for
-        %a.text-link{href: '/2013'} Wicked Good Ruby 2013
-        &#046; Stay tuned for next year&rsquo;s conference!
-      %a.twitter{href: 'https://twitter.com/WickedGoodRuby', target: '_blank'}
-        %span.is-hidden Twitter
-      %a.flickr{href: 'http://www.flickr.com/photos/106073835@N07/sets/72157636770736635/', target: '_blank'}
-        %span.is-hidden Flickr
+    %nav.top-nav
+      .wrap
+        %a.top-nav__item--dockyard{href: "http://www.dockyard.com/", target: "_blank"}
+          %span.dockyard-icon--nav{aria: {hidden: "true"}, data: {icon: "⌂"}}
+          %span.for-screen-reader DockYard
+        %a.top-nav__item{href: "#", target: "_blank"} Register
+
+    %section.intro
+      .wrap
+        .subheader-wrap
+          %i.subheader-has-lines
+            %span.subheader--black DockYard Presents
+        %h1 Wicked&nbsp;Good Ember&nbsp;2014
+        %h2.intro__desc June 17<span class="is-superscript">th</span><span class="text-divider">// </span>Boston, MA
+        .intro__button-wrap
+          %a.intro__button{href: "#"}
+            %span.intro__button__message1 I Wanna Go!
+            %span.intro__button__message2 Please, Can I?
+        %a.intro__scroll-down{href: "#speakers"}
+          %span.intro__scroll-down__icon{aria: {hidden: "true"}, data: {icon: "⌄"}}
+          %span.for-screen-reader Scroll Down
+
+    %section.speakers#speakers
+      .wrap
+        %h1 Speakers
+        %h3 Personal Talks from Today's Professionals
+        .button-wrap
+          %a.button{href: "#"} Submit a Talk
+
+      -#.speakers__images-wrap
+        -#.speakers__images
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+
+    %section.pre-location
+      .pre-location__border
+      .pre-location__icon-wrap
+        .pre-location__icon{data: {icon:"⚑"}}
+
+    .location-has-carrot
+    %section.location
+      .wrap
+        %h1 Location
+        %a.location__address{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
+          %h3 Artists for Humanity EpiCenter<span class="text-divider">// </span>100&nbsp;West&nbsp;2<span class="is-superscript">nd</span>&nbsp;Street South&nbsp;Boston,&nbsp;MA&nbsp;02127
+        %p.location__desc
+          Wicked Good Ruby Conf is going to be held at the Seaport Hotel &amp; World Trade Center in Boston. We recommend staying at their hotel if you are coming from out of town. We have reserved a number of single and double rooms for conference attendees. Be sure to use this
+          = succeed '.' do
+            %a.text-link{href: "#"} link to book your room at the special rate
+          For more details on the hotel's accommodations, please visit
+          = succeed '.' do
+            %a.text-link{href: "#"} seaportboston.com
+
+    .footer-has-carrot
+    %footer
+      .wrap
+        %section.footer__sponsors
+          .subheader-wrap
+            %i.subheader-has-lines
+              %span.subheader--white A Very Special Thank You
+          %h1 Sponsors
+          .button-wrap
+            %a.button{href: "#"} Sponsor Us
+
+        %a.footer__link{href: "http://www.dockyard.com/", target: "_blank"}
+          %h4
+            %span.dockyard-icon--footer{aria: {hidden: "true"}, data: {icon: "⌂"}}
+            This site was designed &amp; developed by DockYard, Inc.

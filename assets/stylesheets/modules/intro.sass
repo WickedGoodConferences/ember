@@ -1,0 +1,67 @@
+@import load
+
+.intro
+  +box-sizing(border-box)
+  position: relative
+  background:
+    image: url("/intro.jpg")
+    size: cover
+  @media (max-width: 799px)
+    padding-top: 50px
+    min-height: 460px
+  @media (min-width: 800px)
+    padding-top: 150px
+    min-height: 700px
+  @media (max-width: 799px), (max-height: 799px)
+    background-position: 50% 0%
+  @media (min-width: 800px) and (min-height: 800px)
+    height: 100%
+    height: calc(100% - 60px)
+    background-position: center 20%
+
+.intro__scroll-down__icon
+  position: absolute
+  left: 0
+  bottom: 16px
+  width: 100%
+  text-align: center
+  -webkit-animation: bounce 6s infinite
+  -moz-animation:    bounce 6s infinite
+  -o-animation:      bounce 6s infinite
+  animation:         bounce 6s infinite
+  &:before
+    font-size: 60px
+    color: $yellow
+    color: rgba($yellow, .75)
+
+@-webkit-keyframes bounce
+  0%, 20%, 33%, 45%, 100%
+    bottom: 16px
+  28%
+    bottom: 26px
+  42%
+    bottom: 23px
+
+@-moz-keyframes bounce
+  0%, 20%, 33%, 45%, 100%
+    bottom: 16px
+  28%
+    bottom: 26px
+  42%
+    bottom: 23px
+
+@-o-keyframes bounce
+  0%, 20%, 33%, 45%, 100%
+    bottom: 16px
+  28%
+    bottom: 26px
+  42%
+    bottom: 23px
+
+@keyframes bounce
+  0%, 20%, 33%, 45%, 100%
+    bottom: 16px
+  28%
+    bottom: 26px
+  42%
+    bottom: 23px

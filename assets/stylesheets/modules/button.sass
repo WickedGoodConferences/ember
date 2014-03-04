@@ -1,0 +1,82 @@
+@import load
+
+@mixin button($color, $background-color, $hover-color)
+  +box-sizing(border-box)
+  +transition-duration(.25s)
+  +transition-property(color, background-color)
+  padding-top: 18px
+  display: inline-block
+  position: relative
+  height: 50px
+  width: 180px
+  background-color: $background-color
+  font:
+    size: 18px
+    family: "Avenir Next", sans-serif
+    weight: 600
+  text-transform: uppercase
+  color: $color
+  &:before, &:after
+    +transition-duration(.25s)
+    +transition-property(border-left-color, border-right-color)
+    position: absolute
+    top: 0
+    border:
+      width: 25px
+      style: solid
+      top-color: transparent
+      bottom-color: transparent
+    content: ""
+  &:before
+    left: -25px
+    border:
+      right-color: $background-color
+      left: none
+  &:after
+    float: right
+    right: -25px
+    border:
+      left-color: $background-color
+      right: none
+  &:hover, &:active
+    background-color: $hover-color
+    color: $background-color
+    &:before
+      border-right-color: $hover-color
+    &:after
+      border-left-color: $hover-color
+
+@mixin button-wrap($border-color)
+  +box-sizing(border-box)
+  margin:
+    right: auto
+    left: auto
+  padding-top: 7px
+  height: 64px
+  width: 250px
+  background-image: url("/button--#{$border-color}.svg")
+  text-align: center
+  @media (max-width: 799px)
+    margin-top: 40px
+  @media (min-width: 800px)
+    margin-top: 90px
+
+.button-wrap
+  @include button-wrap(gray)
+
+.intro__button-wrap
+  @include button-wrap(white)
+
+.button
+  @include button($black, $yellow, $gray)
+
+.intro__button
+  @include button($yellow, $black, $yellow)
+  &:hover
+    .intro__button__message1
+      display: none
+    .intro__button__message2
+      display: inline
+
+.intro__button__message2
+  display: none

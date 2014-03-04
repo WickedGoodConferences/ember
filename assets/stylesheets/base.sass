@@ -1,0 +1,69 @@
+@import compass/reset
+@import load
+
+@font-face
+  font:
+    family: "icomoon"
+    weight: normal
+    style: normal
+  src: url("/fonts/icomoon.eot")
+  src: url("/fonts/icomoon.eot?#iefix") format("eot"), url("/fonts/icomoon.woff") format("woff"), url("/fonts/icomoon.ttf") format("truetype")
+
+html
+  height: 100%
+
+body
+  height: 100%
+  color: $black
+
+h1, h2, h3, h4, p, i
+  font-family: "Avenir Next", sans-serif
+
+h1, h2, h3, h4, i
+  text-align: center
+
+h1
+  padding-bottom: 36px
+  font-weight: 100
+  text-transform: uppercase
+  @media (max-width: 599px)
+    font-size: 36px
+  @media (min-width: 600px)
+    font-size: 60px
+
+h2, h3
+  font-weight: 600
+
+h2
+  @media (max-width: 599px)
+    font-size: 18px
+  @media (min-width: 600px)
+    font-size: 24px
+
+h3
+  line-height: 1.35
+  @media (max-width: 599px)
+    font-size: 16px
+  @media (min-width: 600px)
+    font-size: 18px
+
+h4
+  font-size: 12px
+  line-height: 1.6
+
+p
+  font-size: 15px
+  line-height: 1.6
+
+i
+  font:
+    style: italic
+    size: 12px
+
+a
+  text-decoration: none
+
+[data-icon]:before
+  font-family: "icomoon"
+  content: attr(data-icon)
+  speak: none

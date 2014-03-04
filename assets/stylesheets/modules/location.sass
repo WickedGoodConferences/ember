@@ -1,0 +1,26 @@
+@import load
+
+.location
+  @media (max-width: 749px)
+    padding:
+      top: 50px
+      bottom: 66px
+  @media (min-width: 750px)
+    padding:
+      top: 75px
+      bottom: 120px
+
+.location__address
+  +transition-duration(.25s)
+  +transition-property(color)
+  margin-bottom: 50px
+  display: block
+  color: $black
+  &:hover
+    color: $red
+
+.location__desc
+  margin:
+    right: auto
+    left: auto
+  max-width: 460px
