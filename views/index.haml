@@ -13,9 +13,7 @@
   %body
     %nav.top-nav
       .wrap
-        %a.top-nav__item--dockyard{href: "http://www.dockyard.com/", target: "_blank"}
-          %span.dockyard-icon--nav{aria: {hidden: "true"}, data: {icon: "⌂"}}
-          %span.for-screen-reader DockYard
+        %img.top-nav__item--logo{src: "/wgc.svg", alt: "Wicked Good Conferences"}
         %a.top-nav__item{href: "#", target: "_blank"} Register
 
     %section.intro
@@ -40,19 +38,44 @@
         .button-wrap
           %a.button{href: "#"} Submit a Talk
 
-      -#.speakers__images-wrap
-        -#.speakers__images
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
-          -#%img.speakers__image{src: "/speakers/robert_jackson.png"}
+      %ul.speakers__list
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+            .content-overlay
+              %h5.content-overlay__header This Could Be You!
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+            .content-overlay
+              %h5.content-overlay__header This Could Be You!
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+            .content-overlay
+              %h5.content-overlay__header This Could Be You!
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+            .content-overlay
+              %h5.content-overlay__header This Could Be You!
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+        %li.speakers__list__item
+          %a.speakers__list__item__diamond
+            .content
+            .content-overlay
+              %h5.content-overlay__header Robert Jackson
+              %h6 Developer
+              %h6 At DockYard
 
     %section.pre-location
       .pre-location__border
-      .pre-location__icon-wrap
+      %a.pre-location__icon-wrap{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
         .pre-location__icon{data: {icon:"⚑"}}
 
     .location-has-carrot
@@ -80,7 +103,7 @@
           .button-wrap
             %a.button{href: "#"} Sponsor Us
 
-        %a.footer__link{href: "http://www.dockyard.com/", target: "_blank"}
+        %a.footer__link{href: "dockyard.com/", target: "_blank"}
           %h4
-            %span.dockyard-icon--footer{aria: {hidden: "true"}, data: {icon: "⌂"}}
+            %span.footer__link__logo{aria: {hidden: "true"}, data: {icon: "⌂"}}
             This site was designed &amp; developed by DockYard, Inc.
