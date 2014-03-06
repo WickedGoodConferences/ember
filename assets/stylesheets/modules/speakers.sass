@@ -2,7 +2,7 @@
 
 $diamondSize: 310px
 
-.speakers
+.speakers-section
   @media (max-width: 599px)
     margin-bottom: -220px
     padding-top: 50px
@@ -13,26 +13,26 @@ $diamondSize: 310px
   @media (min-width: 1120px)
     padding-bottom: 30px
 
-.speakers__list
+.speakers
   padding-top: 66px
   font-size: 0
   overflow: hidden
   @media (max-width: 599px)
     +scale(.5)
-    margin-top: -310px
+    margin-top: -$diamondSize
     position: relative
     left: -50%
     width: 200%
   @media (min-width: 600px) and (max-width: 1119px)
     +scale(.8)
-    margin-top: -310px
+    margin-top: -$diamondSize
     position: relative
     left: -12.5%
     width: 125%
   @media (min-width: 1120px)
     margin-top: -270px
 
-.speakers__list__item
+.speaker
   margin:
     right: auto
     left: auto
@@ -60,30 +60,9 @@ $diamondSize: 310px
     height: 0
     top: -396px
     right: -668px
-  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7)
-    cursor: pointer
-
-  &:nth-child(7)
-    top: -173px
-    .content
-      background:
-        image: url("/speakers/robert_jackson.jpg")
-        size: cover
-  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
-    .content
-      background:
-        size: 30%
-        repeat: no-repeat
-        position: 50% 45%
-  &:nth-child(1), &:nth-child(2)
-    .content
-      background-image: url("/speakers/male.svg")
-  &:nth-child(4), &:nth-child(5)
-    .content
-      background-image: url("/speakers/female.svg")
 
   &:not(:nth-child(7))
-    .content-overlay:after
+    .speaker__image-overlay:after
       position: absolute
       top: 160px
       right: 0
@@ -92,7 +71,30 @@ $diamondSize: 310px
       background-image: url("/arrow.svg")
       content: ""
 
-.speakers__list__item__diamond
+  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7)
+    cursor: pointer
+
+  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
+    .speaker__image
+      background:
+        size: 30%
+        repeat: no-repeat
+        position: 50% 45%
+  &:nth-child(1), &:nth-child(2)
+    .speaker__image
+      background-image: url("/speakers/male.svg")
+  &:nth-child(4), &:nth-child(5)
+    .speaker__image
+      background-image: url("/speakers/female.svg")
+
+  &:nth-child(7)
+    top: -173px
+    .speaker__image
+      background:
+        image: url("/speakers/robert_jackson.jpg")
+        size: cover
+
+.speaker__diamond
   +rotate(-45deg)
   display: block
   position: relative
@@ -103,12 +105,10 @@ $diamondSize: 310px
   color: $yellow
   overflow: hidden
   &:hover
-    .content-overlay
+    .speaker__image-overlay
       opacity: 1
-    .content-overlay:after
-      -webkit-animation: point 4s
 
-.content
+.speaker__image
   +rotate(45deg)
   height: 440px
   width: 440px
@@ -116,7 +116,7 @@ $diamondSize: 310px
   top: -64px
   left: -64px
 
-.content-overlay
+.speaker__image-overlay
   +rotate(45deg)
   +transition-delay(.15s)
   +transition-duration(.5s)
@@ -131,24 +131,8 @@ $diamondSize: 310px
     size: 5px
   opacity: 0
   color: $black
-  //&:after
-    //position: absolute
-    //top: 160px
-    //right: 0
-    //height: 120px
-    //width: 100px
-    //background-image: url("/arrow.svg")
-    //content: ""
 
-.content-overlay__header
+.speaker__image-overlay__header
   padding: 100px 110px 60px 110px
   position: relative
   top: 28px
-
-@-webkit-keyframes point
-  0%, 20%, 33%, 45%, 100%
-    right: 0
-  28%
-    right: 26px
-  42%
-    right: 13px
