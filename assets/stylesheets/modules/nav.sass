@@ -2,8 +2,13 @@
 
 .top-nav
   border-top: 1px solid $yellow
-  background-color: $black
+  background-color: rgba($black, .95)
   overflow: auto
+  @media (min-width: 800px) and (min-height: 800px)
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 5
 
 .top-nav__item
   padding:
@@ -18,3 +23,9 @@
     color: $white
   &:last-child
     color: $yellow
+
+.top-nav__item--logo
+  padding:
+    top: 17px
+    bottom: 17px
+  float: left

@@ -17,9 +17,12 @@
 
 .pre-location__icon-wrap
   +rotate(45deg)
+  +transition-duration(.5s)
+  +transition-property(background-color)
   margin:
     right: auto
     left: auto
+  display: block
   background-color: $black
   @media (max-width: 799px)
     margin-top: 46px
@@ -27,8 +30,8 @@
     width: 160px
   @media (min-width: 800px)
     margin-top: 55px
-    height: 200px
-    width: 200px
+    height: 210px
+    width: 210px
   &:before
     position: absolute
     top: -10px
@@ -37,6 +40,8 @@
     bottom: -10px
     border: 1px solid $yellow
     content: ""
+  &:hover
+    background-color: $gray
 
 .pre-location__icon
   +rotate(-45deg)
@@ -47,4 +52,4 @@
   @media (max-width: 799px)
     top: 24px
   @media (min-width: 800px)
-    top: 42px
+    top: 50px

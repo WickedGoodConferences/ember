@@ -3,20 +3,22 @@
 .intro
   +box-sizing(border-box)
   position: relative
-  background:
-    image: url("/intro.jpg")
-    size: cover
+  background-size: cover
+  @media (max-width: 399px)
+    background-image: url("/intro-s.jpg")
+  @media (min-width: 400px) and (max-width: 799px)
+    background-image: url("/intro-m.jpg")
   @media (max-width: 799px)
     padding-top: 50px
     min-height: 460px
   @media (min-width: 800px)
     padding-top: 150px
     min-height: 700px
+    background-image: url("/intro-l.jpg")
   @media (max-width: 799px), (max-height: 799px)
     background-position: 50% 0%
   @media (min-width: 800px) and (min-height: 800px)
     height: 100%
-    height: calc(100% - 60px)
     background-position: center 20%
 
 .intro__scroll-down__icon
