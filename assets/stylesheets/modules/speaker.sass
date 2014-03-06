@@ -1,0 +1,89 @@
+@import load
+
+.speaker-detail-section
+  padding-bottom: 110px
+  overflow: auto
+  @media (max-width: 599px)
+    padding-top: 50px
+  @media (min-width: 600px) and (max-width: 799px)
+    padding-top: 110px
+  @media (min-width: 800px)
+    padding-top: 150px
+  @media (max-height: 599px)
+    padding-top: 110px
+
+.speaker-detail__image-wrap
+  +rotate(45deg)
+  +transition-duration(.5s)
+  +transition-property(background-color)
+  display: block
+  overflow: hidden
+  @media (max-width: 899px)
+    margin: 80px auto
+    height: 160px
+    width: 160px
+  @media (min-width: 900px)
+    margin:
+      top: 140px
+      left: 60px
+    height: 210px
+    width: 210px
+    float: left
+  &:before
+    position: absolute
+    top: -12px
+    left: -12px
+    right: -12px
+    bottom: -12px
+    border: 1px solid $l-gray
+    content: ""
+
+.speaker-detail__image
+  +rotate(-45deg)
+  position: relative
+  background:
+    image: url("/speakers/robert_jackson.jpg")
+    size: cover
+  @media (max-width: 899px)
+    top: -35px
+    left: -35px
+    height: 230px
+    width: 230px
+  @media (min-width: 900px)
+    top: -45px
+    left: -45px
+    height: 300px
+    width: 300px
+
+.speaker-detail__text-wrap
+  @media (max-width: 899px)
+    margin:
+      right: auto
+      left: auto
+    max-width: 460px
+  @media (min-width: 900px)
+    margin-top: 80px
+    width: 50%
+    float: right
+
+.speaker-detail__header
+  margin-bottom: 16px
+
+.speaker-detail__subheader
+  margin-bottom: 16px
+  font-weight: 600
+  color: $l-gray
+  &:not(:first-child)
+    margin-top: 40px
+
+.speaker-detail__website-wrap
+  +transition-duration(.25s)
+  +transition-property(color)
+  margin-top: 16px
+  display: block
+  color: $red
+  &:hover
+    color: lighten($red, 10%)
+
+.speaker-detail__website
+  font-style: italic

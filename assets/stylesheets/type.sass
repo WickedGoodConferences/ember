@@ -1,12 +1,18 @@
 @import load
 
 @mixin has-lines($line-color)
+  &:before, &:after
+    border-bottom-color: $line-color
+
+%has-lines
   position: relative
   &:before, &:after
     position: absolute
     height: 5px
     width: 250px
-    border-bottom: 1px solid $line-color
+    border-bottom:
+      width: 1px
+      style: solid
     content: ""
   &:before
     margin-right: 25px
@@ -14,6 +20,9 @@
   &:after
     margin-left: 25px
     left: 100%
+
+.subheader--black, .subheader--white
+  @extend %has-lines
 
 .subheader--black
   @include has-lines($black)
@@ -46,8 +55,13 @@
     size: 46px
   letter-spacing: -10px
 
-  .location &
+  .location-section &, .schedule-section &, .speaker-detail-section &, .speaker-detail__nav &
     color: $l-gray
+
+  .speaker-detail__nav &
+    top: 6px
+    font-size: 28px
+    letter-spacing: -4px
 
 .subheader-wrap
   margin:
