@@ -81,8 +81,13 @@
   &:hover
     .intro__button__message1
       display: none
+      color: $yellow
     .intro__button__message2
       display: inline
+      color: $black
 
 .intro__button__message2
+  +transition-duration(.25s)
+  +transition-property(color)
   display: none
+  color: $yellow
