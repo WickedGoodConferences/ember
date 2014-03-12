@@ -105,6 +105,11 @@ $diamondSize: 310px
         image: url("/speakers/robert_jackson.jpg")
         size: cover
 
+.speaker__diamond, .speaker__image-overlay, .speaker__image-overlay__header, .speaker__image-overlay__desc
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -ms-backface-visibility: hidden
+
 .speaker__diamond
   +rotate(-45deg)
   display: block
@@ -115,9 +120,6 @@ $diamondSize: 310px
   text-decoration: none
   color: $yellow
   overflow: hidden
-  -webkit-backface-visibility: hidden
-  -moz-backface-visibility: hidden
-  -ms-backface-visibility: hidden
   &:hover
     .speaker__image-overlay
       opacity: 1
