@@ -1,109 +1,75 @@
-!!!5
-%html
-  %head
-    %title Wicked Good Ember Conf | Boston's First Ember Conference
-    %link{href: "/assets/application.css", rel: "stylesheet"}
-    %script{src: "/assets/application.js", type: "text/javascript"}
-    %meta{name: "description", content: ""}
-    %meta{name: "keywords", content: ""}
-    %meta{content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0", name: "viewport"}
-    /[if lt IE 9]
-      <script src='assets/html5shiv.js'></script>
+%section.intro-section
+  .wrap
+    .subheader-wrap
+      %i.subheader-has-lines
+        %span.subheader--black DockYard Presents
+    %h1.intro__header Wicked Good Ember 2014
+    %h2.intro__desc June 17<span class="is-superscript">th</span><span class="text-divider">// </span>Boston, MA
+    .intro__button-wrap
+      %a.intro__button{href: "#"}
+        %span.intro__button__message1 I Wanna Go!
+        %span.intro__button__message2 Please, Can I?
+    %a.intro__scroll-down{href: "#speakers"}
+      %span.intro__scroll-down__icon{aria: {hidden: "true"}, data: {icon: "⌄"}}
+      %span.for-screen-reader Scroll Down
 
-  %body
-    %nav.top-nav
-      .wrap
-        %img.top-nav__item--logo{src: "/wgc.svg", alt: "Wicked Good Conferences"}
-        %a.top-nav__item{href: "#", target: "_blank"} Register
+%section.speakers-section#speakers
+  .wrap
+    %h1 Speakers
+    %h3 Personal Talks from Today's Professionals
+    .button-wrap
+      %a.button{href: "#"} Submit a Talk
 
-    %section.intro-section
-      .wrap
-        .subheader-wrap
-          %i.subheader-has-lines
-            %span.subheader--black DockYard Presents
-        %h1.intro__header Wicked Good Ember 2014
-        %h2.intro__desc June 17<span class="is-superscript">th</span><span class="text-divider">// </span>Boston, MA
-        .intro__button-wrap
-          %a.intro__button{href: "#"}
-            %span.intro__button__message1 I Wanna Go!
-            %span.intro__button__message2 Please, Can I?
-        %a.intro__scroll-down{href: "#speakers"}
-          %span.intro__scroll-down__icon{aria: {hidden: "true"}, data: {icon: "⌄"}}
-          %span.for-screen-reader Scroll Down
+  %ul.speakers
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image{data: {icon:"♂"}}
+        .speaker__image-overlay
+          %h5.speaker__image-overlay__header This Could Be You!
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image{data: {icon:"♂"}}
+        .speaker__image-overlay
+          %h5.speaker__image-overlay__header This Could Be You!
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image{data: {icon:"♀"}}
+        .speaker__image-overlay
+          %h5.speaker__image-overlay__header This Could Be You!
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image{data: {icon:"♀"}}
+        .speaker__image-overlay
+          %h5.speaker__image-overlay__header This Could Be You!
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image
+    %li.speaker
+      %a.speaker__diamond
+        .speaker__image
+        .speaker__image-overlay
+          %h5.speaker__image-overlay__header Robert Jackson
+          %h6 Developer
+          %h6 At DockYard
 
-    %section.speakers-section#speakers
-      .wrap
-        %h1 Speakers
-        %h3 Personal Talks from Today's Professionals
-        .button-wrap
-          %a.button{href: "#"} Submit a Talk
+%section.pre-location-section
+  .pre-location__border
+  %a.pre-location__icon-wrap{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
+    .pre-location__icon{data: {icon:"⚑"}}
 
-      %ul.speakers
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-            .speaker__image-overlay
-              %h5.speaker__image-overlay__header This Could Be You!
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-            .speaker__image-overlay
-              %h5.speaker__image-overlay__header This Could Be You!
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-            .speaker__image-overlay
-              %h5.speaker__image-overlay__header This Could Be You!
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-            .speaker__image-overlay
-              %h5.speaker__image-overlay__header This Could Be You!
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-        %li.speaker
-          %a.speaker__diamond
-            .speaker__image
-            .speaker__image-overlay
-              %h5.speaker__image-overlay__header Robert Jackson
-              %h6 Developer
-              %h6 At DockYard
-
-    %section.pre-location-section
-      .pre-location__border
-      %a.pre-location__icon-wrap{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
-        .pre-location__icon{data: {icon:"⚑"}}
-
-    .location-has-carrot
-    %section.location-section
-      .wrap
-        %h1 Location
-        %a.location__address{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
-          %h3 Artists for Humanity EpiCenter<span class="text-divider">// </span>100&nbsp;West&nbsp;2<span class="is-superscript">nd</span>&nbsp;Street South&nbsp;Boston,&nbsp;MA&nbsp;02127
-        %p.location__desc
-          Wicked Good Ruby Conf is going to be held at the Seaport Hotel &amp; World Trade Center in Boston. We recommend staying at their hotel if you are coming from out of town. We have reserved a number of single and double rooms for conference attendees. Be sure to use this
-          = succeed '.' do
-            %a.text-link{href: "#"} link to book your room at the special rate
-          For more details on the hotel's accommodations, please visit
-          = succeed '.' do
-            %a.text-link{href: "#"} seaportboston.com
-
-    .footer-has-carrot
-    %footer
-      .wrap
-        %section.footer__sponsors
-          .subheader-wrap
-            %i.subheader-has-lines
-              %span.subheader--white A Very Special Thank You
-          %h1 Sponsors
-          .button-wrap
-            %a.button{href: "#"} Sponsor Us
-
-        %a.footer__link{href: "dockyard.com/", target: "_blank"}
-          %h4
-            %span.footer__link__logo{aria: {hidden: "true"}, data: {icon: "⌂"}}
-            This site was designed &amp; developed by DockYard, Inc.
+.location-has-carrot
+%section.location-section
+  .wrap
+    %h1 Location
+    %a.location__address{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
+      %h3 Artists for Humanity EpiCenter<span class="text-divider">// </span>100&nbsp;West&nbsp;2<span class="is-superscript">nd</span>&nbsp;Street South&nbsp;Boston,&nbsp;MA&nbsp;02127
+    %p.location__desc
+      Wicked Good Ruby Conf is going to be held at the Seaport Hotel &amp; World Trade Center in Boston. We recommend staying at their hotel if you are coming from out of town. We have reserved a number of single and double rooms for conference attendees. Be sure to use this
+      = succeed '.' do
+        %a.text-link{href: "#"} link to book your room at the special rate
+      For more details on the hotel's accommodations, please visit
+      = succeed '.' do
+        %a.text-link{href: "#"} seaportboston.com

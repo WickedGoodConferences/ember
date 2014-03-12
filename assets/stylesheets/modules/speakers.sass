@@ -88,21 +88,15 @@ $diamondSize: 310px
       background-image: url("/arrow.svg")
       content: ""
 
-  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7)
+  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
     cursor: pointer
 
-  &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5)
     .speaker__image
-      background:
-        size: 30%
-        repeat: no-repeat
-        position: 50% 45%
-  &:nth-child(1), &:nth-child(2)
-    .speaker__image
-      background-image: url("/speakers/male.svg")
-  &:nth-child(4), &:nth-child(5)
-    .speaker__image
-      background-image: url("/speakers/female.svg")
+      &:before
+        padding-top: 132px
+        display: block
+        font-size: 140px
+        text-align: center
 
   &:nth-child(7)
     top: -173px
