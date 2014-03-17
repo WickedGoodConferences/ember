@@ -12,26 +12,39 @@
 
   %body
     %nav.top-nav
-      .wrap
-        .top-nav__item--logo{aria: {hidden: "true"}, data: {icon: "⌂"}}
-          %span.for-screen-reader Wicked Good Conferences
+      .top-nav__item--logo{aria: {hidden: "true"}, data: {icon: "⌂"}}
+        %span.for-screen-reader Wicked Good Conferences
+      %a.top-nav__item--club-sandwich{href: "#", aria: {hidden: "true"}, data: {icon: "☰"}}
+        %span.for-screen-reader Navigation
+      %a.top-nav__item--close-nav{href: "#", aria: {hidden: "true"}, data: {icon: "x"}}
+        %span.for-screen-reader Close Navigation
+      .top-nav__items
+        %a.top-nav__item{href: "/"} Home
+        %a.top-nav__item{href: "/schedule"} Schedule
         %a.top-nav__item{href: "https://ti.to/wicked-good/ember-2014", target: "_blank"} Register
 
-    = yield
+    %section.main
+      = yield
 
-    .footer-has-carrot
-    %footer
-      .wrap
-        %section.footer__sponsors
-          .subheader-wrap
-            %i.subheader-has-lines
-              %span.subheader--white A Very Special Thank You
-          %h1 Sponsors
-          .button-wrap
-            %a.button{href: "https://docs.google.com/a/dockyard.com/forms/d/1gL2Gglr47w8hzN_piy7wm4-iJ1HoD4PambE0HLJ5pD0/viewform", target: '_blank'} Sponsor Us
-          %a.text-link{href: '/pdfs/prospectus.pdf', target: '_blank'} View the Sponsor Prospectus
+      .footer-has-carrot
+      %footer
+        .wrap
+          %section.footer__sponsors
+            .subheader-wrap
+              %i.subheader-has-lines
+                %span.subheader--white A Very Special Thank You
+            %h1.section__header Sponsors
 
-        %a.footer__link{href: "http://dockyard.com", target: "_blank"}
-          %h4
-            %span.footer__link__logo{aria: {hidden: "true"}, data: {icon: "⎈"}}
-            This site was designed &amp; developed by DockYard, Inc.
+            %p.wrap--text--center
+              If you are interested in sponsoring the conference, please take a look at our
+              %a.text-link{href: '/pdfs/prospectus.pdf', target: '_blank'} sponsor prospectus
+              for more information.
+
+            .button-wrap
+              %a.button{href: "https://docs.google.com/a/dockyard.com/forms/d/1gL2Gglr47w8hzN_piy7wm4-iJ1HoD4PambE0HLJ5pD0/viewform", target: '_blank'} Sponsor Us
+
+          %a.footer__link{href: "http://dockyard.com", target: "_blank"}
+            %h4
+              %span.footer__link__logo{aria: {hidden: "true"}, data: {icon: "⎈"}}
+              This site was designed &amp; developed by DockYard, Inc.
+

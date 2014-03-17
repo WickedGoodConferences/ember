@@ -9,3 +9,30 @@
     margin:
       right: 3%
       left: 3%
+
+.wrap--narrow
+  @media (max-width: 599px)
+    margin:
+      right: 5%
+      left: 5%
+  @media (min-width: 600px) and (max-width: 779px)
+    margin:
+      right: 3%
+      left: 3%
+  @media (min-width: 780px)
+    margin:
+      right: auto
+      left: auto
+    max-width: 780px
+
+%wrap--text
+  margin:
+    right: auto
+    left: auto
+  max-width: 460px
+
+.wrap--text, .wrap--text--center
+  @extend %wrap--text
+
+.wrap--text--center
+  text-align: center

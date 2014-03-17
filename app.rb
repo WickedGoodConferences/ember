@@ -20,3 +20,7 @@ end
 get '/' do
   haml :index
 end
+
+get '/schedule' do
+  haml :schedule
+end

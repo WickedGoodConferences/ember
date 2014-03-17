@@ -3,8 +3,8 @@
     .subheader-wrap
       %i.subheader-has-lines
         %span.subheader--black DockYard Presents
-    %h1.intro__header Wicked Good Ember 2014
-    %h2.intro__desc June 17<span class="is-superscript">th</span><span class="text-divider">// </span>Boston, MA
+    %h1.intro__header.section__header Wicked Good Ember 2014
+    %h2.section__subheader June 17<span class="is-superscript">th</span><span class="text-divider">// </span>Boston, MA
     .intro__button-wrap
       %a.intro__button{href: "https://ti.to/wicked-good/ember-2014", target: '_blank'}
         %span.intro__button__message1 I Wanna Go!
@@ -15,8 +15,8 @@
 
 %section.speakers-section#speakers
   .wrap
-    %h1 Speakers
-    %h3 We are looking to gather up to 9 speakers + 1 keynote speaker for Boston's first Ember Conf!
+    %h1.section__header Speakers
+    %p.wrap--text--center We are looking to gather up to 9 speakers and 1 keynote speaker for Boston&rsquo;s first Ember conference!
     .button-wrap
       %a.button{href: "https://docs.google.com/forms/d/1Kh1s2jPHdfa2w1iMSayJUxgiHLz7QXYhPN4G2Gesm5Q/viewform", target: '_blank'} Submit a Talk
 
@@ -63,13 +63,13 @@
 .location-has-carrot
 %section.location-section
   .wrap
-    %h1 Location
+    %h1.section__header Location
     %a.location__address{href: "https://goo.gl/maps/WtIXD", target: "_blank"}
       %h3 Artists for Humanity EpiCenter<span class="text-divider">// </span>100&nbsp;West&nbsp;2<span class="is-superscript">nd</span>&nbsp;Street South&nbsp;Boston,&nbsp;MA&nbsp;02127
-    %p.location__desc
-      Wicked Good Ember Conf will be held at the Artists for Humanity Center in South Boston. There is no official conference hotel but we
-      %a.text-link{target: '_blank', href: 'https://www.google.com/maps/search/hotels+near+100+W+2nd+St+Boston,+MA/@42.3545284,-71.0548335,14z/am=t/data=!3m2!4b1!5s0x89e37a8279d9c657:0x77b7ec9ab196d8cd'}
-        recommend staying within walking distance of the Red Line.
-      The AFH is 
-      %a.text-link{target: '_blank', href: 'https://www.google.com/maps/dir/Broadway+Station/Artists+For+Humanity,+100+W+2nd+St,+Boston,+MA+02127/@42.3426739,-71.0565071,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89e37a7b4b3192a1:0x52d8625ba756e1d0!2m2!1d-71.056967!2d42.342622!1m5!1m1!1s0x89e37a7cc503b901:0xa35db6dcf24f827e!2m2!1d-71.053647!2d42.342765!3e2'}
-        a 5 minute walk from the Brodway Red Line T stop.
+    %p.wrap--text
+      Wicked Good Ember Conf will be held at the Artists for Humanity EpiCenter in South Boston. There is no official conference hotel, but we recommend
+      = succeed '.' do
+        %a.text-link{href: "https://goo.gl/maps/UwgV6", target: "_blank"} staying within walking distance of the MBTA Red Line
+      The AFH is a 5 minute walk from the
+      = succeed '.' do
+        %a.text-link{href: "https://goo.gl/maps/nFgKJ", target: "_blank"} Broadway Station
