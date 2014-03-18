@@ -43,7 +43,6 @@
   +box-sizing(border-box)
   padding-right: 18px
   position: relative
-  counter-increment: customlistcounter
 
   &:first-child:before
     border-top: 1px solid $black
@@ -70,7 +69,6 @@
     +transition-property(color)
     position: absolute
     font-weight: 600
-    content: counter(customlistcounter, decimal-leading-zero) "."
     color: $white
     @media (max-width: 599px)
       right: 5%
@@ -91,6 +89,11 @@
       background-color: $yellow
     &:after
       color: lighten($l-gray, 25%)
+
+  ol &
+    counter-increment: customlistcounter
+    &:after
+      content: counter(customlistcounter, decimal-leading-zero) "."
 
 .schedule__slot__image-wrap
   +rotate(45deg)
@@ -146,9 +149,6 @@
     padding-top: 36px
 
 .schedule__slot__time
-  font:
-    size: 15px
-    weight: 500
   @media (min-width: 550px)
     position: absolute
 
