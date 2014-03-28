@@ -30,6 +30,8 @@
         %a.top-nav__item{href: "/"} Home
         %a.top-nav__item{href: "/schedule"} Schedule
         %a.top-nav__item{href: "https://ti.to/wicked-good/ember-2014", target: "_blank"} Register
+        %a.top-nav__social{href: "https://twitter.com/WickedGoodEmber", target: "_blank", aria: {hidden: "true"}, data: {icon: "#"}}
+          %span.for-screen-reader Twitter
 
     %section.main
       = yield
@@ -55,4 +57,3 @@
             %h4
               %span.footer__link__logo{aria: {hidden: "true"}, data: {icon: "⎈"}}
               This site was designed &amp; developed by DockYard, Inc.
-

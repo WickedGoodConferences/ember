@@ -68,7 +68,7 @@
   text-transform: uppercase
   &:not(:last-child)
     color: $white
-  &:last-child
+  &:nth-child(3)
     color: $yellow
   &:hover
     background:
@@ -99,3 +99,27 @@
     width: 140px
   @media (min-width: 1200px)
     width: 180px
+
+.top-nav__social
+  &:before
+    font-size: 20px
+    color: $white
+  @media (max-width: 599px)
+    padding:
+      top: 24px
+      left: 45px
+    display: block
+    border-top: 1px solid lighten($black, 10%)
+    &:hover:before
+      color: $yellow
+    &:before
+      +transition-duration(.25s)
+      +transition-property(color)
+  @media (min-width: 600px)
+    padding: 19px 30px
+    border-left: 1px solid lighten($black, 10%)
+    float: right
+    &:hover
+      background:
+        image: url("/nav-bg.svg")
+        size: 5px
