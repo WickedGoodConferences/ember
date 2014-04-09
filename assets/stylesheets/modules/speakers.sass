@@ -81,7 +81,7 @@ $diamondSize: 310px
     top: -396px
     right: -668px
 
-  &:not(:nth-child(7))
+  &:nth-child(3), &:nth-child(6)
     cursor: pointer
 
     .speaker__image
@@ -100,12 +100,36 @@ $diamondSize: 310px
       background-image: url("/arrow.svg")
       content: ""
 
+  &:not(:nth-child(3)), &:not(:nth-child(6))
+    .speaker__image
+      background:
+        size: cover
+
+  &:nth-child(1)
+    .speaker__image
+      background:
+        image: url("/speakers/robin_ward.jpg")
+
+  &:nth-child(2)
+    .speaker__image
+      background:
+        image: url("/speakers/joe_fiorini.jpg")
+
+  &:nth-child(4)
+    .speaker__image
+      background:
+        image: url("/speakers/erik_bryn.jpg")
+
+  &:nth-child(5)
+    .speaker__image
+      background:
+        image: url("/speakers/luke_melia.jpg")
+
   &:nth-child(7)
     top: -173px
     .speaker__image
       background:
         image: url("/speakers/robert_jackson.jpg")
-        size: cover
 
 .speaker__diamond, .speaker__image-overlay, .speaker__image-overlay__header, .speaker__image-overlay__desc
   -webkit-backface-visibility: hidden
