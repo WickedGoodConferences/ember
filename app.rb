@@ -25,8 +25,8 @@ get '/schedule' do
   haml :schedule
 end
 
-get '/roin-ward' do
-  haml :roin_ward
+get '/robin-ward' do
+  haml :robin_ward
 end
 
 get '/joe-fiorini' do
