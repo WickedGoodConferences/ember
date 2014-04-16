@@ -24,3 +24,23 @@ end
 get '/schedule' do
   haml :schedule
 end
+
+get '/roin-ward' do
+  haml :roin_ward
+end
+
+get '/joe-fiorini' do
+  haml :joe_fiorini
+end
+
+get '/erik-bryn' do
+  haml :erik_bryn
+end
+
+get '/luke-melia' do
+  haml :luke_melia
+end
+
+get '/robert-jackson' do
+  haml :robert_jackson
+end

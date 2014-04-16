@@ -59,31 +59,9 @@ $diamondSize: 310px
   position: relative
   width: $diamondSize
   font-size: 18px
-  &:nth-child(1)
-    left: -445px
-  &:nth-child(2)
-    top: -$diamondSize
-    right: -445px
-    height: 0
-  &:nth-child(3)
-    top: -86px
-    left: -668px
-  &:nth-child(4)
-    height: 0
-    top: -396px
-    left: -223px
-  &:nth-child(5)
-    height: 0
-    top: -396px
-    right: -223px
-  &:nth-child(6)
-    height: 0
-    top: -396px
-    right: -668px
 
-  &:nth-child(3), &:nth-child(6)
+  &:not(:nth-child(3)), &:not(:nth-child(6))
     cursor: pointer
-
     .speaker__image
       &:before
         padding-top: 132px
@@ -100,36 +78,61 @@ $diamondSize: 310px
       background-image: url("/arrow.svg")
       content: ""
 
-  &:not(:nth-child(3)), &:not(:nth-child(6))
+  &:nth-child(3), &:nth-child(6)
+    cursor: default
+
+  &:not(:nth-child(7)), &:not(:nth-child(9))
     .speaker__image
-      background:
-        size: cover
+      background-size: cover
 
   &:nth-child(1)
+    left: -446px
     .speaker__image
-      background:
-        image: url("/speakers/robin_ward.jpg")
+      background-image: url("/speakers/robin_ward.jpg")
 
   &:nth-child(2)
+    top: -$diamondSize
+    right: -446px
+    height: 0
     .speaker__image
-      background:
-        image: url("/speakers/joe_fiorini.jpg")
+      background-image: url("/speakers/joe_fiorini.jpg")
+
+  &:nth-child(3)
+    top: -86px
+    left: -668px
 
   &:nth-child(4)
+    top: -396px
+    left: -223px
+    height: 0
     .speaker__image
-      background:
-        image: url("/speakers/erik_bryn.jpg")
+      background-image: url("/speakers/erik_bryn.jpg")
 
   &:nth-child(5)
+    top: -396px
+    right: -223px
+    height: 0
     .speaker__image
-      background:
-        image: url("/speakers/luke_melia.jpg")
+      background-image: url("/speakers/luke_melia.jpg")
+
+  &:nth-child(6)
+    height: 0
+    top: -396px
+    right: -668px
 
   &:nth-child(7)
     top: -173px
+    left: -446px
+
+  &:nth-child(8)
+    top: -483px
     .speaker__image
-      background:
-        image: url("/speakers/robert_jackson.jpg")
+      background-image: url("/speakers/robert_jackson.jpg")
+
+  &:nth-child(9)
+    margin-top: -583px
+    top: -210px
+    right: -446px
 
 .speaker__diamond, .speaker__image-overlay, .speaker__image-overlay__header, .speaker__image-overlay__desc
   -webkit-backface-visibility: hidden
