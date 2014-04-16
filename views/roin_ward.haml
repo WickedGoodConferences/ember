@@ -1,0 +1,33 @@
+%section.speaker-detail-section
+  .wrap--narrow
+    %h1.speaker-detail__name Robin Ward
+    -#%h2 10/12<span class="text-divider">// </span>Saturday<span class="text-divider">// </span>11:00 am
+
+    .speaker-detail__image-wrap
+      .speaker-detail__image.robin-ward
+
+    .speaker-detail__text-wrap
+      %h4.speaker-detail__subheader About the Talk
+      %h3.speaker-detail__header Creating an Extensible EmberJS Application
+      %p
+        Creating an extensible EmberJS Application
+      %p
+        One of the beautiful things about writing a browser application in EmberJS is that it's much easier for users to extend and enhance for their purposes. In this talk, I will show just how easy it is to expose endpoints in an EmberJS application that users can leverage to create their own custom plugins on top of your software.
+      %h4.speaker-detail__subheader About the Speaker
+      %p
+        Robin is "Evil Trout" Ward, known in the Ember community for co-founding Discourse, currently the largest open source Ember app.
+
+        I've also created a bunch of fun extensions to ember such as ember-renderspeed and ember-cloaking.
+      %a.speaker-detail__website-wrap{href: "http://eviltrout.com"}
+        %span.speaker-detail__website http://eviltrout.com
+        &rarr;
+
+%nav.speaker-detail__nav
+  .wrap--narrow
+    %a.speaker-detail__nav__back{href: "/#speakers"} Back to Full Speaker List
+    .speaker-detail__nav__items
+      %a.speaker-detail__nav__prev{href: "#"} Previous
+      %span.text-divider &nbsp;//
+      %a.speaker-detail__nav__next{href: "#"} Next
+
+

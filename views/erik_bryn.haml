@@ -1,0 +1,27 @@
+%section.speaker-detail-section
+  .wrap--narrow
+    %h1.speaker-detail__name Erik Bryn
+    -#%h2 10/12<span class="text-divider">// </span>Saturday<span class="text-divider">// </span>11:00 am
+
+    .speaker-detail__image-wrap
+      .speaker-detail__image.erik-bryn
+
+    .speaker-detail__text-wrap
+      %h4.speaker-detail__subheader About the Talk
+      %h3.speaker-detail__header Keynote
+
+      %h4.speaker-detail__subheader About the Speaker
+      %p
+        Ember.js core team, yadda yadda yadda
+      %a.speaker-detail__website-wrap{href: "#"}
+        %a.speaker-detail__website{href:'http://joefiorini.com'} http://joefiorini.com
+        &rarr;
+
+%nav.speaker-detail__nav
+  .wrap--narrow
+    %a.speaker-detail__nav__back{href: "/#speakers"} Back to Full Speaker List
+    .speaker-detail__nav__items
+      %a.speaker-detail__nav__prev{href: "#"} Previous
+      %span.text-divider &nbsp;//
+      %a.speaker-detail__nav__next{href: "#"} Next
+
