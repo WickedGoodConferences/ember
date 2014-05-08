@@ -44,3 +44,19 @@ end
 get '/robert-jackson' do
   haml :robert_jackson
 end
+
+get '/dan-gebhardt' do
+  haml :dan_gebhardt
+end
+
+get '/katie-gengler' do
+  haml :katie_gengler
+end
+
+get '/phil-renaud' do
+  haml :phil_renaud
+end
+
+get '/edward-faulkner' do
+  haml :edward_faulkner
+end

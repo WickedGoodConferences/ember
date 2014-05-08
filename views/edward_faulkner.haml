@@ -1,0 +1,27 @@
+%section.speaker-detail-section
+  .wrap--narrow
+    %h1.speaker-detail__name Edward Faulkner
+    -#%h2 10/12<span class="text-divider">// </span>Saturday<span class="text-divider">// </span>11:00 am
+
+    .speaker-detail__image-wrap
+      .speaker-detail__image.edward-faulkner
+
+    .speaker-detail__text-wrap
+      %h4.speaker-detail__subheader About the Talk
+      %h3.speaker-detail__header Distributed Data for User Experience
+      %p
+        "Offline first" is a rallying cry for making web apps as capable as any native application. Learn about the major benefits and challenges of fully-distributed data storage. Examine patterns for binding and editing distributed data in an Ember application, motivated by great user experience. Learn strategies for monitoring, debugging, and upgrading your stateful clients.
+      %h4.speaker-detail__subheader About the Speaker
+      %p
+        Edward is a full-spectrum hacker who has built ambitious systems at Akamai, the MIT Media Lab, and his own medical app startup.
+      %a.speaker-detail__website-wrap{href: "http://braveleaf.com", target: '_blank'}
+        %span.speaker-detail__website http://braveleaf.com
+        &rarr;
+
+%nav.speaker-detail__nav
+  .wrap--narrow
+    %a.speaker-detail__nav__back{href: "/#speakers"} Back to Full Speaker List
+    .speaker-detail__nav__items
+      %a.speaker-detail__nav__prev{href: "/phil-renaud"} Previous
+      %span.text-divider &nbsp;//
+      %a.speaker-detail__nav__next{href: "/erik-bryn"} Next
