@@ -21,7 +21,7 @@
     margin-left: 25px
     left: 100%
 
-.subheader--black, .subheader--white
+.subheader--black, .subheader--white, .subheader--gray
   @extend %has-lines
 
 .subheader--black
@@ -29,6 +29,10 @@
 
 .subheader--white
   @include has-lines($white)
+
+.subheader--gray
+  @include has-lines($gray)
+  color: $gray
 
 .text-link
   font-style: italic
