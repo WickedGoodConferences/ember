@@ -8,12 +8,12 @@ footer
   @media (min-width: 750px)
     padding-top: 75px
 
-.footer__sponsors, .footer__link
+.footer__sponsors-wrap, .footer__link
   margin:
     right: auto
     left: auto
 
-.footer__sponsors
+.footer__sponsors-wrap
   max-width: 785px
   border-bottom: 1px solid $gray
   color: $white
@@ -22,15 +22,22 @@ footer
   @media (min-width: 750px)
     padding-bottom: 120px
 
-.footer__sponsors__logos
+.footer__sponsors
   margin-top: 100px
 
+.footer__sponsors__logos
+  overflow: auto
+  text-align: center
+
+.footer__sponsors__logo__link, .footer__sponsors__logo__link--third
+  padding-bottom: 100px
+  display: inline-block
+
+.footer__sponsors__logo__link--third
+  width: 50%
+  float: left
+
 .footer__sponsors__logo
-  margin:
-    right: auto
-    bottom: 100px
-    left: auto
-  display: block
   width: 100%
   max-width: 480px
 
