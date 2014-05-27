@@ -39,24 +39,29 @@
       .footer-has-carrot
       %footer
         .wrap
-          %section.footer__sponsors#sponsors
+          %section.footer__sponsors-wrap#sponsors
             .subheader-wrap
               %i.subheader-has-lines
                 %span.subheader--white A Very Special Thank You
             %h1.section__header Sponsors
 
-            .footer__sponsors__logos
+            .footer__sponsors
               .subheader-wrap
                 %i.subheader-has-lines
                   %span.subheader--gray Very Good Sponsor
-              %a{href: "https://www.fundinggates.com/", target: "_blank"}
-                %img.footer__sponsors__logo{src: "/sponsors/funding-gates.png"}
+              .footer__sponsors__logos
+                %a.footer__sponsors__logo__link{href: "https://www.fundinggates.com/", target: "_blank"}
+                  %img.footer__sponsors__logo{src: "/sponsors/funding-gates.png"}
 
               .subheader-wrap
                 %i.subheader-has-lines
                   %span.subheader--gray Kinda Good Sponsor
-              %a{href: "http://www.201-created.com/", target: "_blank"}
-                %img.footer__sponsors__logo{src: "/sponsors/201-created.png"}
+
+              .footer__sponsors__logos
+                %a.footer__sponsors__logo__link--third{href: "http://www.201-created.com/", target: "_blank"}
+                  %img.footer__sponsors__logo{src: "/sponsors/201-created.png"}
+                %a.footer__sponsors__logo__link--third{href: "http://www.cerebris.com/", target: "_blank"}
+                  %img.footer__sponsors__logo{src: "/sponsors/cerebris.png"}
 
             %p.wrap--text--center
               If you are interested in sponsoring the conference, please take a look at our
