@@ -26,16 +26,25 @@ footer
   margin-top: 100px
 
 .footer__sponsors__logos
+  padding-bottom: 100px
   overflow: auto
   text-align: center
 
 .footer__sponsors__logo__link, .footer__sponsors__logo__link--third
-  padding-bottom: 100px
   display: inline-block
 
 .footer__sponsors__logo__link--third
-  width: 50%
   float: left
+  @media (max-width: 599px)
+    width: 45%
+    &:nth-child(odd)
+      margin-right: 5%
+    &:nth-child(even)
+      margin-bottom: 5%
+  @media (min-width: 600px)
+    width: 30%
+    &:not(:last-child)
+      margin-right: 5%
 
 .footer__sponsors__logo
   width: 100%
