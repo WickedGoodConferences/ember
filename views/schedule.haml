@@ -3,14 +3,15 @@
 
   %h2.section__subheader 6/16<span class="text-divider">// </span>Monday
   %ul.schedule__slots
-    %li.schedule__slot-wrap
-      .schedule__slot
-        %p.schedule__slot__time 8:00 am
-        .schedule__slot__image-wrap
-          .schedule__slot__icon{data: {icon:"⚒"}}
-        .schedule__slot__info-wrap
-          %h3.schedule__slot__info Workshop
-          %p.schedule__slot__desc A one-day introduction to Ember.js workshop taught by DockYard.
+    %li
+      %a.schedule__slot-wrap{href: "https://ti.to/wicked-good/ember-2014"}
+        .schedule__slot
+          %p.schedule__slot__time 9:30 am
+          .schedule__slot__image-wrap
+            .schedule__slot__icon{data: {icon:"⚒"}}
+          .schedule__slot__info-wrap
+            %h3.schedule__slot__info Workshop
+            %p.text-link A one-day introduction to Ember.js workshop taught by DockYard.
 
   %h2.section__subheader 6/17<span class="text-divider">// </span>Tuesday
   %ol.schedule__slots
