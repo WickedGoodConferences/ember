@@ -12,8 +12,14 @@
   @media (max-height: 599px)
     padding-top: 110px
 
-.speaker-detail__name
+.speaker-detail__name, .speaker-detail__datetime
   text-align: center
+
+.speaker-detail__name
+  @media (max-width: 899px)
+    padding-bottom: 25px
+  @media (min-width: 900px)
+    padding-bottom: 50px
 
 .speaker-detail__image-wrap
   +rotate(45deg)
@@ -82,7 +88,7 @@
       image: url("/speakers/phil-renaud.jpg")
   &.edward-faulkner
     background:
-      image: url("/speakers/edward-faulkner.png")
+      image: url("/speakers/edward-faulkner.jpg")
 
 .speaker-detail__text-wrap
   @media (max-width: 899px)
