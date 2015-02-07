@@ -1,0 +1,33 @@
+%section.speaker-detail-section
+  .wrap--narrow
+    %h1.speaker-detail__name Dan Gebhardt
+    %h2.speaker-detail__datetime 6/17<span class="text-divider">// </span>Tuesday<span class="text-divider">// </span>1:40 pm
+
+    .speaker-detail__image-wrap
+      .speaker-detail__image.dan-gebhardt
+
+    .speaker-detail__text-wrap
+      %h4.speaker-detail__subheader About the Talk
+      %h3.speaker-detail__header Building Autonomous Web Applications with Ember and Orbit
+      %p
+        The next generation of "ambitious web applications" should be as usable and autonomous as native applications. They should support non-blocking user interfaces, offline operation, undo / redo stacks, and local / remote data synchronization. These features will require a sophisticated client-side data layer built from a new set of primitives.
+      %p
+        Orbit.js is a standalone data library that was developed with these use cases in mind. Orbit uses promises, events and low-level transforms to coordinate access to data sources and keep their contents synchronized. Orbit can realize its potential when coupled with a dynamic framework like Ember that can bind an application's state to its data.
+      %p
+        This talk will introduce Orbit and focus on using it with Ember. An Ember/Orbit demo will highlight the advantages of this integration.
+      %h4.speaker-detail__subheader About the Speaker
+      %p
+        Dan is a co-founder of the SaaS consultancy Cerebris and has been working as part of the Tilde team since 2012. He's been developing web applications for 15 years, with a recent focus on Rails-driven APIs and Ember UIs. Dan is an avid contributor to open source, the lead developer of Orbit.js, and a regular speaker. He loves hiking near his home in NH with his wife, two boys, and their ridiculously happy dog.
+      %a.speaker-detail__website-wrap{href: "http://cerebris.com", target: '_blank'}
+        %span.speaker-detail__website http://cerebris.com
+        &rarr;
+
+%nav.speaker-detail__nav
+  .wrap--narrow
+    %a.speaker-detail__nav__back{href: "/2014#speakers"} Back to Full Speaker List
+    .speaker-detail__nav__items
+      %a.speaker-detail__nav__prev{href: "/2014/robert-jackson"} Previous
+      %span.text-divider &nbsp;//
+      %a.speaker-detail__nav__next{href: "/2014/luke-melia"} Next
+
+

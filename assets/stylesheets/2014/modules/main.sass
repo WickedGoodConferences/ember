@@ -1,0 +1,11 @@
+@import 2014/load
+
+.main
+  @media (max-width: 599px)
+    +transition-duration(.25s)
+    +transition-property(right)
+    position: absolute
+    right: 0
+    width: 100%
+  @media (min-width: 600px)
+    height: 100%

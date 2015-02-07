@@ -1,0 +1,34 @@
+@import 2014/load
+
+@mixin has-carrot($color)
+  &:before, &:after
+    border-bottom-color: $color
+
+.footer-has-carrot, .location-has-carrot
+  position: relative
+  top: -16px
+  &:before, &:after
+    +box-sizing(border-box)
+    width: 50%
+    border:
+      width: 16px
+      style: solid
+      top: none
+    content: ""
+  &:before
+    float: left
+    border:
+      right-color: transparent
+      left: none
+  &:after
+    float: right
+    border:
+      left-color: transparent
+      right: none
+
+.footer-has-carrot
+  @include has-carrot($black)
+  margin-top: 16px
+
+.location-has-carrot
+  @include has-carrot($white)

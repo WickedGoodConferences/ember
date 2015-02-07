@@ -1,0 +1,49 @@
+@import 2014/load
+
+.speaker-detail__nav
+  height: 60px
+  border-top: 1px solid $l-gray
+  font-size: 12px
+  text-transform: uppercase
+
+.speaker-detail__nav__back, .speaker-detail__nav__prev, .speaker-detail__nav__next
+  +transition-duration(.25s)
+  +transition-property(color)
+  padding:
+    top: 24px
+    bottom: 20px
+  color: $l-gray
+  &:hover
+    color: lighten($l-gray, 10%)
+
+.speaker-detail__nav__back
+  @media (max-width: 499px)
+    display: none
+  @media (min-width: 500px)
+    float: left
+    &:before
+      margin-right: 10px
+      content: "←"
+
+.speaker-detail__nav__items
+  position: relative
+  top: 18px
+  @media (max-width: 499px)
+    text-align: center
+  @media (min-width: 500px)
+    float: right
+
+.speaker-detail__nav__prev:before, .speaker-detail__nav__next:after
+  position: relative
+  top: 4px
+  font:
+    size: 18px
+    family: "icomoon"
+
+.speaker-detail__nav__prev:before
+  margin-right: 10px
+  content: "<"
+
+.speaker-detail__nav__next:after
+  margin-left: 10px
+  content: ">"
