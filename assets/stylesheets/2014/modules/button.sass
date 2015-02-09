@@ -1,0 +1,92 @@
+@import 2014/load
+
+@mixin button-wrap($border-color)
+  background-image: url("/2014/button--#{$border-color}.svg")
+
+@mixin button($color, $background-color, $hover-color)
+  background-color: $background-color
+  color: $color
+  &:before
+    border-right-color: $background-color
+  &:after
+    border-left-color: $background-color
+  &:hover, &:active
+    background-color: $hover-color
+    color: $background-color
+    &:before
+      border-right-color: $hover-color
+    &:after
+      border-left-color: $hover-color
+
+.button-wrap, .intro__button-wrap
+  +box-sizing(border-box)
+  margin:
+    right: auto
+    left: auto
+  padding-top: 7px
+  position: relative
+  height: 64px
+  width: 250px
+  text-align: center
+  z-index: 2
+  @media (max-width: 799px)
+    margin-top: 40px
+  @media (min-width: 800px)
+    margin-top: 90px
+
+.button-wrap
+  @include button-wrap(gray)
+
+.intro__button-wrap
+  @include button-wrap(white)
+
+.button, .intro__button
+  +box-sizing(border-box)
+  +transition-duration(.25s)
+  +transition-property(color, background-color)
+  padding-top: 18px
+  display: inline-block
+  position: relative
+  height: 50px
+  width: 180px
+  font:
+    size: 18px
+    weight: 600
+  text-transform: uppercase
+  &:before, &:after
+    +transition-duration(.25s)
+    +transition-property(border-left-color, border-right-color)
+    position: absolute
+    top: 0
+    border:
+      width: 25px
+      style: solid
+      top-color: transparent
+      bottom-color: transparent
+    content: ""
+  &:before
+    left: -25px
+    border-left: none
+  &:after
+    float: right
+    right: -25px
+    border-right: none
+
+.button
+  @include button($black, $yellow, $gray)
+
+.intro__button
+  @include button($yellow, $black, $yellow)
+  &:hover
+    .intro__button__message1
+      display: none
+      color: $yellow
+    .intro__button__message2
+      display: inline
+      color: $black
+
+.intro__button__message2
+  +transition-duration(.25s)
+  +transition-property(color)
+  display: none
+  color: $yellow
