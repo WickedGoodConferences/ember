@@ -1,0 +1,43 @@
+// COLORS
+
+$pink: #f26864;
+$blue: #5b6688;
+$white: #fff;
+
+
+
+// FONT WEIGHTS
+
+$light: 300;
+$regular: 400;
+$bold: 700;
+$xbold: 800;
+$xxbold: 900;
+
+
+
+// EXTENDS
+
+%border-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+// MIXINS
+
+@mixin transition-duration($transition-duration) {
+  -webkit-transition-duration: $transition-duration;
+  transition-duration: $transition-duration;
+}
+
+@mixin transition-property($transition-property...) {
+  -webkit-transition-property: $transition-property;
+  transition-property: $transition-property;
+}
+
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  animation: $animation;
+}

@@ -1,0 +1,79 @@
+.cta__svg,
+.subsection--map__svg {
+  border-radius: 50%;
+  @media (max-width: 1199px) {
+    height: 46px;
+    width: 46px;
+  }
+  @media (min-width: 1200px) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.cta__svg {
+  position: relative;
+  fill: $pink;
+  @include transition-duration(.25s);
+  @include transition-property(background-color, box-shadow, fill);
+  .cta:hover & {
+    background-color: $pink;
+    fill: $white;
+  }
+  @media (max-width: 369px) {
+    margin-right: 4px;
+  }
+  @media (min-width: 370px) and (max-width: 1199px) {
+    margin-right: 10px;
+  }
+  @media (max-width: 1199px) {
+    margin-left: 15px;
+    top: 13px;
+    box-shadow: 0 0 0 3px $white;
+    .cta:hover & {
+      box-shadow: 0 0 0 3px $pink;
+    }
+  }
+  @media (min-width: 1200px) {
+    top: 28px;
+    box-shadow: 0 0 0 5px $white;
+    .cta:hover & {
+      box-shadow: 0 0 0 5px $pink;
+    }
+  }
+
+  .header .cta:first-child &,
+  .section--r & {
+    @media (min-width: 1200px) {
+      margin-right: 40px;
+      margin-left: 70px;
+      float: left;
+    }
+  }
+
+  .header .cta:last-child &,
+  .section--l & {
+    @media (min-width: 1200px) {
+      margin-right: 70px;
+      margin-left: 40px;
+      float: right;
+    }
+  }
+}
+
+.subsection--map__svg {
+  position: absolute;
+  background-color: $pink;
+  fill: $white;
+  z-index: 1;
+  @media (max-width: 1199px) {
+    top: calc(50% - 23px);
+    left: calc(50% - 23px);
+    box-shadow: 0 0 0 3px $pink;
+  }
+  @media (min-width: 1200px) {
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    box-shadow: 0 0 0 5px $pink;
+  }
+}

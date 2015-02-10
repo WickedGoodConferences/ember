@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  @media (max-width: 419px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 86%;
+    text-align: center;
+  }
+  @media (min-width: 420px) {
+    overflow: auto;
+  }
+}
+
+.dockyard {
+  @media (max-width: 419px) {
+    display: none;
+  }
+  @media (min-width: 420px) {
+    padding: 12px 22px;
+    float: left;
+    border-right: 4px solid $pink;
+    fill: $pink;
+  }
+}
+
+.footer__credits {
+  font-size: 13px;
+  font-weight: $regular;
+  line-height: 1.38;
+  color: $pink;
+  @media (min-width: 420px) {
+    margin-top: 2px;
+    margin-left: 30px;
+    float: left;
+  }
+}
+
+.footer__credit {
+  max-width: 200px;
+  @media (max-width: 419px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.footer__twitter {
+  padding: 19px 22px;
+  height: 30px;
+  width: 30px;
+  fill: $pink;
+  @media (max-width: 419px) {
+    display: inline-block;
+  }
+  @media (min-width: 420px) {
+    float: right;
+  }
+}

@@ -1,0 +1,109 @@
+.header {
+  position: relative;
+  @extend %border-box;
+  background-color: $pink;
+  background-image: url("/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $white;
+  @media (max-width: 1199px) {
+    border: 5px solid $white;
+  }
+  @media (min-width: 1200px) {
+    height: 687px;
+  }
+
+  @media (max-width: 799px) {
+    padding-top: 36px;
+  }
+  @media (min-width: 800px) and (max-width: 1199px) {
+    padding-top: 72px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 170px;
+  }
+}
+
+.book {
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  fill: $white;
+  @media (max-width: 1199px) {
+    height: 16px;
+  }
+  @media (min-width: 1200px) {
+    height: 42px;
+  }
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  @media (max-width: 799px) {
+    margin-bottom: 15px;
+    height: 150px;
+    width: 150px;
+  }
+  @media (min-width: 800px) {
+    margin-bottom: 30px;
+    height: 310px;
+    width: 310px;
+  }
+}
+
+.heading,
+.subheading {
+  text-align: center;
+}
+
+.heading {
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+  width: 86%;
+  font-size: 40px;
+  font-weight: $xbold;
+  text-transform: uppercase;
+}
+
+.subheading {
+  display: block;
+  font-weight: $regular;
+  @media (max-width: 799px) {
+    font-size: 15px;
+  }
+  @media (min-width: 800px) {
+    font-size: 21px;
+  }
+  @media (max-width: 1199px) {
+    margin-bottom: 36px;
+  }
+  sup {
+    font-size: 12px;
+  }
+}
+
+.subheading__item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  &:not(:last-child) {
+    border-right-style: solid;
+    border-right-color: $white;
+    @media (max-width: 799px) {
+      margin-right: 6px;
+      padding-right: 6px;
+      border-right-width: 1px;
+    }
+    @media (min-width: 800px) {
+      margin-right: 24px;
+      padding-right: 24px;
+      border-right-width: 2px;
+    }
+  }
+}
