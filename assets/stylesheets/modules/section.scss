@@ -23,21 +23,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  @media (max-width: 1199px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 95px;
-    padding-bottom: 132px;
-    position: relative;
-  }
-}
-
-.section--r {
-  @media (min-width: 1200px) {
-    overflow: auto;
-  }
 }
 
 .section--venue {
@@ -52,6 +37,22 @@
   background-image: url("/archive.jpg");
 }
 
+.l-section {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1090px;
+  position: relative;
+  overflow: auto; // For seciton--r's
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 132px;
+  }
+}
+
 .section__copy {
   color: $white;
   @media (max-width: 1199px) {
@@ -62,32 +63,11 @@
   }
   @media (min-width: 1200px) {
     max-width: 528px;
-    &:before {
-      content: "";
-      position: absolute;
-      top: calc(50% - 60px);
-      height: 120px;
-      width: 30px;
-      background-color: $white;
-    }
-  }
-
-  .section--l & {
-    @media (min-width: 1200px) {
-      padding-left: 100px;
-      &:before {
-        left: 0;
-      }
-    }
   }
 
   .section--r & {
     @media (min-width: 1200px) {
-      padding-right: 100px;
       float: right;
-      &:before {
-        right: 0;
-      }
     }
   }
 }
