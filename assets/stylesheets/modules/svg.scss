@@ -6,20 +6,16 @@
     width: 46px;
   }
   @media (min-width: 1200px) {
-    height: 60px;
-    width: 60px;
+    height: 54px;
+    width: 54px;
   }
 }
 
 .cta__svg {
   position: relative;
-  fill: $pink;
+  fill: $white;
   @include transition-duration(.25s);
-  @include transition-property(background-color, box-shadow, fill);
-  .cta:hover & {
-    background-color: $pink;
-    fill: $white;
-  }
+  @include transition-property(fill);
   @media (max-width: 369px) {
     margin-right: 4px;
   }
@@ -29,34 +25,26 @@
   @media (max-width: 1199px) {
     margin-left: 15px;
     top: 13px;
-    box-shadow: 0 0 0 3px $white;
-    .cta:hover & {
-      box-shadow: 0 0 0 3px $pink;
-    }
   }
   @media (min-width: 1200px) {
-    top: 28px;
-    box-shadow: 0 0 0 5px $white;
-    .cta:hover & {
-      box-shadow: 0 0 0 5px $pink;
-    }
+    top: 18px;
   }
 
   .header .cta:first-child &,
   .section--r & {
     @media (min-width: 1200px) {
-      margin-right: 40px;
-      margin-left: 70px;
-      float: left;
+      margin-right: 28px;
+      margin-left: 24px;
+      float: right;
     }
   }
 
   .header .cta:last-child &,
   .section--l & {
     @media (min-width: 1200px) {
-      margin-right: 70px;
-      margin-left: 40px;
-      float: right;
+      margin-right: 24px;
+      margin-left: 28px;
+      float: left;
     }
   }
 }

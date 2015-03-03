@@ -41,6 +41,7 @@
   margin-right: auto;
   margin-left: auto;
   display: block;
+  position: relative;
   @media (max-width: 799px) {
     margin-bottom: 15px;
     height: 150px;
@@ -90,7 +91,7 @@
   padding-bottom: 2px;
   &:not(:last-child) {
     border-right-style: solid;
-    border-right-color: $white;
+    border-right-color: rgba($white, .5);
     @media (max-width: 799px) {
       margin-right: 6px;
       padding-right: 6px;
