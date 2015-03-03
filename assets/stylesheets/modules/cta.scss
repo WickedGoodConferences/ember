@@ -1,12 +1,13 @@
 .ctas {
   @media (max-width: 799px) {
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
   @media (min-width: 800px) and (max-width: 1199px) {
     margin-bottom: 72px;
   }
   @media (min-width: 1200px) {
     margin-top: -336px;
+    margin-bottom: 300px;
     overflow: auto;
     background-color: $white;
   }
