@@ -73,8 +73,13 @@
 }
 
 .section__desc {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
   @media (max-width: 1199px) {
-    margin-bottom: 50px;
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
   }
 }
 
