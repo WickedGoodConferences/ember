@@ -1,0 +1,38 @@
+.t-display {
+  font-weight: $xxbold;
+  line-height: 1;
+  @media (max-width: 1199px) {
+    margin-bottom: 18px;
+    font-size: 48px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 24px;
+    font-size: 90px;
+  }
+}
+
+.t-text {
+  font-weight: $light;
+  @media (max-width: 1199px) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.t-link {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  text-decoration: none;
+  .section & {
+    border-bottom-color: $white;
+    color: $white;
+  }
+  .footer & {
+    border-bottom-color: $pink;
+    color: $pink;
+  }
+}
