@@ -36,3 +36,12 @@ $xxbold: 900;
   -webkit-transition-property: $transition-property;
   transition-property: $transition-property;
 }
+
+@mixin columns($columns, $column-gap) {
+  -webkit-columns: $columns;
+  -moz-columns: $columns;
+  columns: $columns;
+  -webkit-column-gap: $column-gap;
+  -moz-column-gap: $column-gap;
+  column-gap: $column-gap;
+}
