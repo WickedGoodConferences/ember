@@ -9,49 +9,23 @@
   }
 }
 
-.faq__display {
-  color: $blue;
-}
-
 .faq__copy {
+  margin-bottom: 50px;
+  list-style: none;
   @media (min-width: 900px) {
     @include columns(2, 64px);
   }
 }
 
-.faq__copy li {
-  list-style: none;
-}
-
 .faq__copy h2 {
-  font-size: 18px;
   padding-bottom: 5px;
+  font-size: 18px;
   font-weight: $xbold;
   color: $blue;
 }
 
-.faq__copy p {
-  text-align: justify;
-  color: $blue--dark;
-  @media (min-width: 1200px) {
-    font-size: 18px;
-  }
-}
-
-.faq__copy p:last-of-type {
-  @media (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
-}
-
 .faq__email-us {
-  margin-top: 50px;
-  width: 100%;
   text-align: center;
-}
-
-.faq__email-us--light {
   font-weight: $light;
   color: $blue;
-  font-style: italic;
 }
