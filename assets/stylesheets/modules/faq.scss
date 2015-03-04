@@ -31,7 +31,7 @@
 .faq__copy h2 {
   font-size: 18px;
   padding-bottom: 5px;
-  font-weight: $bold;
+  font-weight: $xbold;
   color: $blue;
 }
 
@@ -56,14 +56,7 @@
 }
 
 .faq__email-us--light {
-  font-weight: $xlight;
+  font-weight: $light;
   color: $blue;
   font-style: italic;
-}
-
-.faq__email-us--link {
-  margin-left: 3px;
-  border-bottom-color: $pink;
-  color: $pink;
-  white-space: nowrap;
 }

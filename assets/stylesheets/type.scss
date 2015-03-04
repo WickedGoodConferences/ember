@@ -27,12 +27,17 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   text-decoration: none;
+  white-space: nowrap;
   .section & {
     border-bottom-color: $white;
     color: $white;
   }
+  .faq &,
   .footer & {
     border-bottom-color: $pink;
     color: $pink;
+  }
+  .faq & {
+    margin-left: 3px;
   }
 }
