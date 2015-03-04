@@ -12,6 +12,9 @@
 .faq__copy {
   margin-bottom: 50px;
   list-style: none;
+  @media (max-width: 1199px) {
+    padding-top: 28px;
+  }
   @media (min-width: 900px) {
     @include columns(2, 64px);
   }
