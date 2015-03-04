@@ -27,10 +27,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+  @media (min-width: 340px) and (max-width: 1199px) {
+    padding-left: 3%;
+  }
   @media (max-width: 1199px) {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 3%;
     width: 86%;
     max-width: 320px;
     border-width: 3px;
