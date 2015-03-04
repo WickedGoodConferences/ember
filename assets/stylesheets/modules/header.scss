@@ -56,14 +56,14 @@
 
 .heading,
 .subheading {
+  margin-right: auto;
+  margin-left: auto;
+  width: 86%;
   text-align: center;
 }
 
 .heading {
-  margin-right: auto;
   margin-bottom: 16px;
-  margin-left: auto;
-  width: 86%;
   font-size: 40px;
   font-weight: $xbold;
   text-transform: uppercase;
@@ -89,6 +89,7 @@
 .subheading__item {
   padding-top: 2px;
   padding-bottom: 2px;
+  line-height: 2;
   &:not(:last-child) {
     border-right-style: solid;
     border-right-color: rgba($white, .5);
