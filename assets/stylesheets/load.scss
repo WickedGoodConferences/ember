@@ -9,10 +9,8 @@ $white: #fff;
 
 // FONT WEIGHTS
 
-$xlight: 200;
 $light: 300;
 $regular: 400;
-$bold: 700;
 $xbold: 800;
 $xxbold: 900;
 
@@ -37,9 +35,4 @@ $xxbold: 900;
 @mixin transition-property($transition-property...) {
   -webkit-transition-property: $transition-property;
   transition-property: $transition-property;
-}
-
-@mixin animation($animation) {
-  -webkit-animation: $animation;
-  animation: $animation;
 }
