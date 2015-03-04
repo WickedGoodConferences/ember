@@ -95,11 +95,11 @@
     border-right-color: rgba($white, .5);
     @media (max-width: 799px) {
       margin-right: 6px;
-      padding-right: 6px;
+      padding-right: 12px;
       border-right-width: 1px;
     }
     @media (min-width: 800px) {
-      margin-right: 24px;
+      margin-right: 20px;
       padding-right: 24px;
       border-right-width: 2px;
     }
