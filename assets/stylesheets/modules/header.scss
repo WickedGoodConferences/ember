@@ -41,7 +41,6 @@
   margin-right: auto;
   margin-left: auto;
   display: block;
-  position: relative;
   @media (max-width: 799px) {
     margin-bottom: 15px;
     height: 150px;
@@ -70,7 +69,6 @@
 }
 
 .subheading {
-  display: block;
   font-weight: $regular;
   @media (max-width: 799px) {
     font-size: 15px;
@@ -125,8 +123,8 @@
     max-width: 480px;
   }
   @media (min-width: 1200px) {
-    max-width: 624px;
     padding-top: 45px;
     padding-bottom: 45px;
+    max-width: 624px;
   }
 }

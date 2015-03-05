@@ -1,6 +1,5 @@
 .cta__svg,
 .subsection--map__svg {
-  border-radius: 50%;
   @media (max-width: 1199px) {
     height: 46px;
     width: 46px;
@@ -51,6 +50,7 @@
 
 .subsection--map__svg {
   position: absolute;
+  border-radius: 50%;
   background-color: $pink;
   fill: $white;
   z-index: 1;
@@ -60,8 +60,8 @@
     box-shadow: 0 0 0 3px $pink;
   }
   @media (min-width: 1200px) {
-    top: calc(50% - 30px);
-    left: calc(50% - 30px);
+    top: calc(50% - 27px);
+    left: calc(50% - 27px);
     box-shadow: 0 0 0 5px $pink;
   }
 }
