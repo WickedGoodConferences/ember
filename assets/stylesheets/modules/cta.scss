@@ -3,143 +3,139 @@
   padding-bottom: 25px;
   @media (max-width: 799px) {
     margin-bottom: 36px;
-    padding-right: 7%;
-    padding-left: 7%;
   }
   @media (min-width: 800px) and (max-width: 1199px) {
     margin-bottom: 72px;
   }
   @media (min-width: 1200px) {
-    margin-top: -336px;
+    margin-top: -360px;
     margin-bottom: 300px;
-    overflow: auto;
+    overflow: hidden;
     background-color: $blue;
+    &:before {
+      content: "";
+    }
   }
 }
 
 .cta {
   display: block;
   @extend %border-box;
-  border-style: solid;
-  border-color: $white;
   background-color: rgba($white, .1);
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: $white;
   font-weight: $xbold;
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
-  @media (min-width: 340px) and (max-width: 1199px) {
-    padding-left: 3%;
-  }
+  @include transition-duration(.25s);
+  @include transition-property(background-color, color);
   @media (max-width: 1199px) {
     margin-right: auto;
     margin-left: auto;
+    padding-right: 4px;
     width: 86%;
     max-width: 320px;
+    border-right-style: solid;
+    border-left-style: solid;
     border-width: 3px;
     font-size: 20px;
     line-height: 70px;
-  }
-  @media (min-width: 1200px) {
-    border-width: 5px;
-    font-size: 27px;
-  }
-
-  .header &:first-child,
-  .section--r & {
-    @media (min-width: 1200px) {
-      float: left;
-    }
-  }
-
-  .header &:last-child,
-  .section--l & {
-    @media (min-width: 1200px) {
-      float: right;
-    }
-  }
-
-  .header &:first-child {
-    @media (min-width: 1200px) {
-      margin-left: 40px;
-      text-align: right;
-    }
-  }
-
-  .header &:last-child {
-    @media (min-width: 1200px) {
-      margin-right: 40px;
-    }
-  }
-
-  .header & {
-    position: relative;
-    @media (max-width: 799px) {
-      width: 100%;
-    }
-    @media (max-width: 1199px) {
+    text-align: center;
+    &:not(:last-of-type) {
       margin-bottom: 18px;
     }
-    @media (min-width: 1200px) {
-      width: 370px;
-      line-height: 90px;
-    }
   }
-
-  .section & {
-    @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
+    width: 364px;
+    border-width: 5px;
+    font-size: 26px;
+    line-height: 90px;
+    .header & {
+      position: relative;
+      &:first-child {
+        margin-left: calc(50% - 528px);
+        padding-right: 10px;
+        float: left;
+        text-align: right;
+        border-right-style: solid;
+      }
+      &:last-child {
+        margin-right: calc(50% - 528px);
+        padding-left: 10px;
+        float: right;
+        border-left-style: solid;
+      }
+    }
+    .section & {
       position: absolute;
       top: calc(50% - 60px);
     }
-  }
-
-  .section--r & {
-    @media (min-width: 1200px) {
-      left: 6px;
+    .section--l & {
+      margin-right: 60px;
+      right: 0;
+      border-left-style: solid;
+    }
+    .section--r & {
+      margin-left: 60px;
+      border-right-style: solid;
+      text-align: right;
     }
   }
-  .section--l & {
-    @media (min-width: 1200px) {
-      right: 20px;
-    }
-  }
-}
-
-.cta[href] {
-  opacity: 1;
-  @include transition-duration(.25s);
-  @include transition-property(background-color, color);
-  &:hover {
+  &:not(.is-disabled):hover {
     background-color: $white;
     color: $blue;
-    .cta__svg {
-      fill: $blue;
+  }
+  &.is-disabled {
+    opacity: .5;
+  }
+}
+
+.cta__arrow {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: -5px;
+    height: 100px;
+    fill: rgba($white, .1);
+    @include transition-duration(.25s);
+    @include transition-property(fill);
+    .cta:not(.is-disabled):hover & {
+      fill: $white;
+    }
+    .header .cta:first-child &,
+    .section--r & {
+      left: -100px;
+      width: 100px;
+    }
+    .header .cta:last-child &,
+    .section--l & {
+      left: 100%;
+      width: 60px;
     }
   }
 }
 
-.cta {
-  opacity: .5;
-}
-
-.cta__heading {
-  .section & {
-    @media (min-width: 1200px) {
-      display: inline-block;
-      width: 300px;
-      line-height: 90px;
-    }
+.cta__mask {
+  @media (max-width: 1199px) {
+    display: none;
   }
-
-  .section--l & {
-    @media (min-width: 1200px) {
-      float: left;
+  @media (min-width: 1200px) {
+    position: absolute;
+    height: 100px;
+    width: 16px;
+    top: -5px;
+    stroke-width: 5;
+    stroke: $white;
+    fill: $blue;
+    .header .cta:first-child & {
+      right: -6px;
     }
-  }
-
-  .section--r & {
-    @media (min-width: 1200px) {
-      float: right;
-      text-align: right;
+    .header .cta:last-child & {
+      left: -6px;
     }
   }
 }
