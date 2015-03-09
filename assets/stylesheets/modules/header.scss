@@ -89,6 +89,7 @@
   padding-top: 2px;
   padding-bottom: 2px;
   line-height: 2;
+  white-space: nowrap;
   &:not(:last-child) {
     border-right-style: solid;
     border-right-color: rgba($white, .5);

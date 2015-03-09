@@ -5,14 +5,17 @@
 }
 
 .section--venue {
+  background-color: $blue;
   background-image: url("/venue.jpg");
 }
 
 .section--sponsor {
+  background-color: $blue;
   background-image: url("/sponsor.jpg");
 }
 
 .section--archive {
+  background-color: $blue--dark;
   background-image: url("/archive.jpg");
 }
 
