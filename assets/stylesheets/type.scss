@@ -56,6 +56,14 @@ i {
   .faq &,
   .footer & {
     border-bottom-color: $pink;
+  }
+  .faq & {
     color: $pink;
   }
+}
+
+.t-hidden {
+  position: absolute;
+  left: -9999px;
+  text-indent: -9999px;
 }

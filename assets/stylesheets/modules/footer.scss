@@ -24,6 +24,11 @@
   }
 }
 
+.footer__link {
+  text-decoration: none;
+  color: $pink;
+}
+
 .footer__credits {
   font-size: 13px;
   font-weight: $regular;
