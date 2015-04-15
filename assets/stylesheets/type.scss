@@ -13,8 +13,12 @@ i {
     margin-bottom: 24px;
     font-size: 90px;
   }
-  .faq & {
+  .l-faq &,
+  .l-speakers & {
     color: $blue;
+  }
+  .l-speakers & {
+    text-align: center;
   }
 }
 
