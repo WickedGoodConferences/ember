@@ -17,6 +17,11 @@
   @media (min-width: 950px) {
     width: 25%;
   }
+  
+  & > a {
+    display: block;
+    text-decoration: none;
+  }
 }
 
 .speaker__image {
