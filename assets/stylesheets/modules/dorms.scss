@@ -1,0 +1,10 @@
+ul.section__dorms {
+  list-style-type: disc;
+  li {
+    margin: 5px 0px;
+    font-style: italic;
+    &:before {
+      content: "✓ ";
+    }
+  }
+}
