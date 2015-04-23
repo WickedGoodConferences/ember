@@ -65,13 +65,21 @@
   }
 }
 
-.section__desc {
-  &:not(:last-of-type) {
+.section__desc,
+.section__ul {
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
-  &:last-of-type {
+  &:last-child {
     margin-bottom: 50px;
   }
+}
+
+.section__li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: $light;
+  line-height: 1.66;
 }
 
 .subsection--map,
