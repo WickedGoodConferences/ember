@@ -46,6 +46,9 @@ i {
       }
     }
   }
+  .l-speakers & {
+    text-align: center;
+  }
 }
 
 .t-link {
@@ -58,10 +61,12 @@ i {
     color: $white;
   }
   .faq &,
-  .footer & {
+  .footer &,
+  .l-speakers & {
     border-bottom-color: $pink;
   }
-  .faq & {
+  .faq &,
+  .l-speakers & {
     color: $pink;
   }
 }
