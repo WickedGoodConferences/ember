@@ -47,7 +47,18 @@ i {
     }
   }
   .l-speakers & {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
+    font-size: 15px;
     text-align: center;
+    color: $blue--dark;
+  }
+  .speaker__talk & {
+    text-align: justify;
+    &:not(:last-of-type) {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -68,6 +79,7 @@ i {
   }
   .faq &,
   .l-speakers &,
+  .speaker__talk &,
   .sponsors & {
     color: $pink;
   }
