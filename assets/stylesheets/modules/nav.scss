@@ -114,16 +114,17 @@
 .nav__links {
   @media (max-width: 799px) {
     position: fixed;
-    top: -100%;
+    top: 45px;
     left: 0;
     width: 100%;
     background: $pink;
     background: linear-gradient(to bottom right, rgba($pink, .95), rgba(#b76873, .95));
+    opacity: 0;
     z-index: 2;
     @include transition-duration(.25s);
-    @include transition-property(top);
+    @include transition-property(opacity);
     .mobile-nav-is-showing & {
-      top: 45px;
+      opacity: 1;
     }
   }
   @media (min-width: 800px) {
