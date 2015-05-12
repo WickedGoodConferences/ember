@@ -47,4 +47,7 @@ body {
   @media (min-width: 800px) {
     border: 10px solid $white;
   }
+  &.mobile-nav-is-showing {
+    overflow: hidden;
+  }
 }
