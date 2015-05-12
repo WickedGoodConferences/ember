@@ -44,7 +44,7 @@ main {
 
 body {
   font-family: "aktiv-grotesk-std", sans-serif;
-  @media (min-width: 1200px) {
+  @media (min-width: 800px) {
     border: 10px solid $white;
   }
 }

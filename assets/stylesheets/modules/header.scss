@@ -5,35 +5,15 @@
   background-image: url("/header.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   color: $white;
-  @media (max-width: 1199px) {
-    border: 5px solid $white;
-  }
   @media (max-width: 799px) {
-    padding-top: 36px;
+    padding-top: 78px;
   }
   @media (min-width: 800px) and (max-width: 1199px) {
-    padding-top: 72px;
+    padding-top: 144px;
   }
   @media (min-width: 1200px) {
     padding-top: 170px;
-  }
-}
-
-.book {
-  margin-right: auto;
-  margin-left: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  fill: $white;
-  @media (max-width: 1199px) {
-    height: 16px;
-  }
-  @media (min-width: 1200px) {
-    height: 42px;
   }
 }
 
