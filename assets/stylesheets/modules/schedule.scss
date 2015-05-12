@@ -1,0 +1,98 @@
+.l-schedule {
+  padding-bottom: 81px;
+  @media (max-width: 939px) {
+    padding-top: 57px;
+  }
+  @media (min-width: 940px) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 95px;
+    width: 86%;
+    max-width: 780px;
+  }
+}
+
+.schedule {
+  background-color: $purple--xlight;
+}
+
+.events {
+  margin-top: 42px;
+}
+
+.event,
+.event--general {
+  border-top: 1px solid $purple--medium;
+  list-style-type: none;
+}
+
+.event--general {
+  padding: 20px 7%;
+  background-image: url("/stripes.svg");
+  background-size: 25px;
+}
+
+.event__link {
+  padding: 20px 7%;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    .event__name,
+    .event__speaker {
+      color: $pink;
+    }
+  }
+}
+
+.event__time {
+  margin-bottom: 8px;
+  display: inline-block;
+  font-weight: $xbold;
+  line-height: 1.25;
+  color: $blue--light;
+  @media (max-width: 939px) {
+    font-size: 18px;
+  }
+  @media (min-width: 940px) {
+    position: absolute;
+    width: 200px;
+    font-size: 27px;
+    text-align: right;
+  }
+}
+
+.event__name,
+.event__speaker {
+  font-weight: $xbold;
+  color: $blue;
+  @media (min-width: 940px) {
+    padding-left: 39%;
+  }
+  .event__link & {
+    @include transition-duration(.25s);
+    @include transition-property(color);
+  }
+}
+
+.event__name {
+  margin-bottom: 6px;
+  line-height: 1.25;
+  @media (max-width: 939px) {
+    font-size: 24px;
+  }
+  @media (min-width: 940px) {
+    font-size: 27px;
+  }
+}
+
+.event__desc {
+  font-size: 18px;
+  font-weight: $light;
+  @media (min-width: 940px) {
+    padding-left: 39%;
+  }
+}
+
+.event__speaker {
+  font-size: 18px;
+}

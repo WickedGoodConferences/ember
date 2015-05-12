@@ -6,10 +6,10 @@
   background-size: cover;
   background-position: center;
   color: $white;
-  @media (max-width: 799px) {
+  @media (max-width: 939px) {
     padding-top: 78px;
   }
-  @media (min-width: 800px) and (max-width: 1199px) {
+  @media (min-width: 940px) and (max-width: 1199px) {
     padding-top: 144px;
   }
   @media (min-width: 1200px) {
@@ -22,12 +22,12 @@
   margin-left: auto;
   display: block;
   position: relative;
-  @media (max-width: 799px) {
+  @media (max-width: 939px) {
     margin-bottom: 15px;
     height: 150px;
     width: 150px;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 940px) {
     margin-bottom: 30px;
     height: 310px;
     width: 310px;
