@@ -137,9 +137,10 @@
   text-decoration: none;
   @include transition-duration(.25s);
   @media (max-width: 799px) {
+    padding-top: calc(8vh - 4.5px);
+    padding-bottom: calc(8vh - 4.5px);
     display: block;
     border-bottom: 1px solid rgba($white, .25);
-    line-height: calc(20vh - 9px);
     text-align: center;
     color: $white;
     letter-spacing: 2px;
