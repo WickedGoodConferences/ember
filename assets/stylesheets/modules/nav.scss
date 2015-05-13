@@ -12,7 +12,7 @@
   @media (max-width: 799px) {
     position: fixed;
     top: 0;
-    height: 45px;
+    height: 48px;
     width: 100%;
     box-shadow: 0 1px 10px rgba($blue--dark, .1);
     background-color: $white;
@@ -45,8 +45,8 @@
     fill: $pink;
   }
   @media (max-width: 799px) {
-    padding-top: 14px;
-    padding-bottom: 9px;
+    padding-top: 15px;
+    padding-bottom: 11px;
   }
   @media (min-width: 800px) {
     padding-top: 22px;
@@ -64,8 +64,8 @@
 
 .nav__icon {
   @media (max-width: 799px) {
-    margin-right: -14px;
-    padding: 14px;
+    margin-right: -16px;
+    padding: 16px;
     right: 5.625%;
     .mobile-nav-is-showing & {
       .nav__icon__top {
@@ -114,7 +114,7 @@
 .nav__links {
   @media (max-width: 799px) {
     position: fixed;
-    top: 45px;
+    top: 48px;
     left: 0;
     width: 100%;
     background: $pink;
@@ -140,8 +140,6 @@
   text-decoration: none;
   @include transition-duration(.25s);
   @media (max-width: 799px) {
-    padding-top: calc(8vh - 4.5px);
-    padding-bottom: calc(8vh - 4.5px);
     display: block;
     border-bottom: 1px solid rgba($white, .25);
     text-align: center;
@@ -153,9 +151,13 @@
     }
   }
   @media (max-width: 799px) and (max-height: 349px) {
+    padding-top: calc(12.5vh - 16px);
+    padding-bottom: calc(12.5vh - 16px);
     font-size: 15px;
   }
   @media (max-width: 799px) and (min-height: 350px) {
+    padding-top: calc(12.5vh - 25px);
+    padding-bottom: calc(12.5vh - 25px);
     font-size: 30px;
   }
   @media (min-width: 800px) {
