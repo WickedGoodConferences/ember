@@ -1,6 +1,21 @@
-.anchor {
+.anchor,
+.index__anchor {
   display: block;
   visibility: hidden;
+}
+
+.anchor {
+  @media (max-width: 799px) {
+    margin-top: -75px;
+    height: 75px;
+  }
+  @media (min-width: 800px) {
+    margin-top: -200px;
+    height: 200px;
+  }
+}
+
+.index__anchor {
   @media (max-width: 799px) {
     margin-top: -45px;
     height: 45px;
