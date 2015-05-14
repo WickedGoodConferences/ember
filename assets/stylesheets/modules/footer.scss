@@ -1,13 +1,19 @@
 .footer {
-  margin: 30px auto;
-  width: 86%;
-  max-width: 1090px;
+  padding: 30px;
+  border-top: 1px solid rgba($pink, .5);
   @media (max-width: 499px) {
     text-align: center;
   }
   @media (min-width: 500px) {
     overflow: auto;
   }
+}
+
+.l-footer {
+  margin-right: auto;
+  margin-left: auto;
+  width: 86%;
+  max-width: 1090px;
 }
 
 .footer__dockyard {
