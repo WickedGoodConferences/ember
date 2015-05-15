@@ -39,6 +39,19 @@ $xxbold: 900;
   transition-property: $transition-property;
 }
 
+
+@mixin translate($translate...) {
+  -webkit-transform: translate($translate);
+  -ms-transform: translate($translate);
+  transform-property: translate($translate);
+}
+
+@mixin box-sizing($box-sizing) {
+  -webkit-box-sizing: ($box-sizing);
+  -moz-box-sizing: ($box-sizing);
+  box-sizing: ($box-sizing);
+}
+
 @mixin columns($columns, $column-gap) {
   -webkit-columns: $columns;
   -moz-columns: $columns;
