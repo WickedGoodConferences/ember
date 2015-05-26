@@ -44,11 +44,11 @@ main {
 
 body {
   font-family: "aktiv-grotesk-std", sans-serif;
-  @media (min-width: 800px) {
+  @media (min-width: 940px) {
     border: 10px solid $white;
   }
   &.mobile-nav-is-showing {
-    @media (max-width: 799px) {
+    @media (max-width: 939px) {
       overflow: hidden;
     }
   }

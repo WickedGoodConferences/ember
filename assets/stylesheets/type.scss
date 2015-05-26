@@ -14,10 +14,12 @@ i {
     font-size: 90px;
   }
   .faq &,
-  .l-speakers & {
+  .l-speakers &,
+  .schedule & {
     color: $blue;
   }
-  .l-speakers & {
+  .l-speakers &,
+  .schedule & {
     text-align: center;
   }
 }
@@ -80,6 +82,7 @@ i {
   .faq &,
   .l-speakers &,
   .speaker__talk &,
+  .schedule &,
   .sponsors & {
     color: $pink;
   }
