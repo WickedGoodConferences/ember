@@ -43,15 +43,13 @@ main {
 }
 
 body {
-  font-family: "Whitney A", "Whitney B", sans-serif;
-  font-weight: $book;
-  text-align: center;
-  background-color: $gray--light;
-}
-
-.main {
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
-  max-width: 920px;
+  font-family: "aktiv-grotesk-std", sans-serif;
+  @media (min-width: 940px) {
+    border: 10px solid $white;
+  }
+  &.mobile-nav-is-showing {
+    @media (max-width: 939px) {
+      overflow: hidden;
+    }
+  }
 }

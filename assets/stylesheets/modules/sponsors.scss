@@ -1,70 +1,112 @@
-.section--sponsors {
-  background-color: $purple;
-}
-
-.l-sponsors {
+.sponsors__desc {
   margin-right: auto;
   margin-left: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  width: 86%;
-  max-width: 1040px;
+  max-width: 450px;
+  text-align: left;
+}
+
+.sponsors--wicked-good {
+  margin-top: 80px;
+}
+
+.sponsors--very-good,
+.sponsors--good {
+  margin-top: 40px;
+}
+
+.sponsors--good {
+  margin-bottom: 60px;
 }
 
 .sponsors__heading {
-  margin-bottom: 30px;
-  font-size: 42px;
-  font-weight: $xbold;
-  text-align: center;
+  font-size: 18px;
+  font-weight: $bold;
   text-transform: uppercase;
   color: $blue;
+  letter-spacing: 1.5px;
+  &:after {
+    content: "";
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 2px;
+    width: 54px;
+    background-color: $blue;
+  }
 }
 
-.sponsor {
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 60px;
-  text-align: center;
+.sponsors__logos {
+  margin-top: 46px;
   list-style-type: none;
-}
-
-.sponsor__heading {
-  margin-right: auto;
-  margin-bottom: 32px;
-  margin-left: auto;
-  padding-bottom: 12px;
-  width: 180px;
-  border-bottom: 2px solid $purple--light;
-  font-size: 21px;
-  text-align: center;
-  color: $blue;
 }
 
 .sponsor__logo {
-  margin-right: 16px;
-  margin-left: 16px;
+}
+
+.sponsor__logo {
   display: inline-block;
-  list-style-type: none;
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: 54px;
+  &.is-empty {
+    background-image: url(/sponsor.svg);
+    background-repeat: no-repeat;
+  }
+  .sponsors--wicked-good & {
+    margin-right: 24px;
+    margin-left: 24px;
+    &.is-empty {
+      background-size: 55px 86px;
+      background-position: center 24px;
+    }
+  }
+  .sponsors--very-good &,
+  .sponsors--good & {
+    margin-right: 40px;
+    margin-left: 40px;
+    &.is-empty {
+      background-size: 38px 60px;
+      background-position: center 18px;
+    }
   }
 }
 
-.sponsor__link {
+.sponsor__logo__link {
   display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $blue;
+  transition-duration: .25s;
+  transition-property: opacity;
+  &:focus,
+  &:hover {
+    opacity: .5;
+  }
+  .sponsor__logo.is-empty & {
+    border: 1px dashed $black-50;
+    background-color: $gray--dark-05;
+  }
+  .sponsors--wicked-good & {
+    height: 176px;
+    width: 220px;
+    font-size: 24px;
+  }
+  .sponsors--wicked-good .sponsor__logo.is-empty & {
+    padding-top: 122px;
+  }
+  .sponsors--very-good &,
+  .sponsors--good & {
+    height: 120px;
+    width: 152px;
+    font-size: 16px;
+  }
+  .sponsors--very-good .sponsor__logo.is-empty &,
+  .sponsors--good .sponsor__logo.is-empty & {
+    padding-top: 84px;
+  }
 }
 
-.sponsor__image {
-  max-width: 100%;
-  .wicked-good & {
-    max-height: 80px;
-  }
-  .very-good & {
-    max-height: 50px;
-  }
-  .kinda-good &,
-  .good &,
-  .video & {
-    max-height: 24px;
-  }
+.sponsor__logo__link svg {
+  position: relative;
+  top: 12px;
+  width: 100%;
 }

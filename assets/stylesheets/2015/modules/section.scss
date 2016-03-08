@@ -1,0 +1,156 @@
+.section--no-image {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 57px;
+  padding-bottom: 81px;
+  width: 86%;
+  @media (min-width: 900px) {
+    max-width: 1040px;
+  }
+}
+
+.section {
+  background-size: cover;
+  background-position: center;
+}
+
+.section--venue {
+  background-color: $blue;
+  background-image: url("/2015/venue.jpg");
+}
+
+.section--sponsor {
+  background-color: $blue;
+  background-image: url("/2015/sponsor.jpg");
+}
+
+.section--archive {
+  background-color: $blue--dark;
+  background-image: url("/2015/archive.jpg");
+}
+
+.l-section {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1090px;
+  position: relative;
+  overflow: auto; // For section--r's
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 132px;
+  }
+}
+
+.section__copy {
+  color: $white;
+  @media (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 86%;
+    max-width: 480px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 528px;
+  }
+
+  .section--r & {
+    @media (min-width: 1200px) {
+      float: right;
+    }
+  }
+}
+
+.section__desc,
+.section__ul {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}
+
+.section__li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: $light;
+  line-height: 1.66;
+}
+
+.subsection--map,
+.subsection--building {
+  @media (min-width: 760px) {
+    width: 50%;
+  }
+}
+
+.subsection--map {
+  float: left;
+  position: relative;
+  @media (max-width: 759px) {
+    width: 100%;
+  }
+  @media (min-width: 760px) {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 3px;
+      width: 50%;
+      background-color: $pink;
+    }
+  }
+}
+
+.subsection--map__pinpoint {
+  position: absolute;
+  top: 68%;
+  left: calc(50% - 5px);
+  height: 12px;
+  width: 12px;
+  @extend %border-box;
+  border: 3px solid $pink;
+  border-radius: 6px;
+  &:before {
+    content: "";
+    margin-left: 2px;
+    display: block;
+    background-color: $pink;
+    width: 3px;
+    @media (max-width: 639px) {
+      margin-top: -64px;
+      height: 64px;
+    }
+    @media (min-width: 640px) and (max-width: 759px) {
+      margin-top: -100px;
+      height: 100px;
+    }
+    @media (min-width: 780px) and (max-width: 1519px) {
+      margin-top: -64px;
+      height: 64px;
+    }
+    @media (min-width: 1520px) {
+      margin-top: -132px;
+      height: 132px;
+    }
+  }
+}
+
+.subsection--map__image {
+  float: left;
+  width: 100%;
+}
+
+.subsection--building {
+  @media (max-width: 759px) {
+    display: none;
+  }
+  @media (min-width: 760px) {
+    float: left;
+  }
+}

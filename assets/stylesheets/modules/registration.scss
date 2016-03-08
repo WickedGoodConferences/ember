@@ -1,0 +1,140 @@
+.tito-ticket,
+.tito-discount-code {
+  margin-bottom: 42px;
+  padding-bottom: 42px;
+  position: relative;
+  border-bottom: 1px solid $gray;
+  overflow: auto;
+  text-align: left;
+  list-style-type: none;
+}
+
+.tito-ticket-name,
+.tito-discount-code-label {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 19px;
+  font-weight: $semibold;
+}
+
+.tito-ticket-description,
+.tito-ticket-price {
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.tito-ticket-description {
+  @media (min-width: 800px) {
+    width: calc(100% - 200px);
+    float: left;
+  }
+}
+
+.tito-ticket-price-quantity {
+  @media (max-width: 799px) {
+    margin-top: 24px;
+    float: right;
+  }
+  @media (min-width: 800px) {
+    position: absolute;
+    right: 0;
+    bottom: 31px;
+  }
+}
+
+.tito-ticket-price {
+  display: inline-block;
+}
+
+.tito-ticket-quantity {
+  position: relative;
+  top: -7px;
+  float: right;
+}
+
+.tito-ticket-quantity span {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.tito-ticket-quantity-field,
+.tito-discount-code-field {
+  border: 1px solid $gray--dark;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 36px;
+  transition-duration: .25s;
+  transition-property: border-color;
+  &:focus {
+    outline: none;
+    border-color: $blue--dark;
+  }
+}
+
+.tito-ticket-quantity-field {
+  width: 44px;
+  text-align: center;
+}
+
+.tito-discount-code-show {
+  display: none;
+}
+
+.tito-discount-code-field {
+  padding-left: 10px;
+}
+
+.tito-discount-apply-button {
+  border: none;
+  background-color: transparent;
+  color: $pink;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: $semibold;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: .25s;
+  transition-property: opacity;
+  &:focus,
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.tito-submit-wrapper {
+  overflow: auto;
+}
+
+.tito-submit {
+  padding: 12px 36px;
+  display: inline-block;
+  border: 2px solid $pink;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $pink;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition-duration: .25s;
+  transition-property: background-color, color;
+  &:focus,
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+  }
+  @media (min-width: 800px) {
+    float: right;
+  }
+}
+
+.tito-badge-link {
+  display: none;
+}
