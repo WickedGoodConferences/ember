@@ -1,25 +1,19 @@
-.sponsors__desc {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 450px;
-  text-align: left;
-}
-
 .sponsors--wicked-good {
   margin-top: 80px;
 }
 
 .sponsors--very-good,
-.sponsors--good {
+.sponsors--good,
+.sponsors--video {
   margin-top: 40px;
 }
 
-.sponsors--good {
+.sponsors--video {
   margin-bottom: 60px;
 }
 
 .sponsors__heading {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: $bold;
   text-transform: uppercase;
   color: $blue;
@@ -42,9 +36,6 @@
 }
 
 .sponsor__logo {
-}
-
-.sponsor__logo {
   display: inline-block;
   margin-bottom: 54px;
   &.is-empty {
@@ -60,7 +51,8 @@
     }
   }
   .sponsors--very-good &,
-  .sponsors--good & {
+  .sponsors--good &,
+  .sponsors--video & {
     margin-right: 40px;
     margin-left: 40px;
     &.is-empty {
@@ -94,13 +86,15 @@
     padding-top: 122px;
   }
   .sponsors--very-good &,
-  .sponsors--good & {
+  .sponsors--good &,
+  .sponsors--video & {
     height: 120px;
     width: 152px;
     font-size: 16px;
   }
   .sponsors--very-good .sponsor__logo.is-empty &,
-  .sponsors--good .sponsor__logo.is-empty & {
+  .sponsors--good .sponsor__logo.is-empty &,
+  .sponsors--video .sponsor__logo.is-empty & {
     padding-top: 84px;
   }
 }
