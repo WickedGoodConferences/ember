@@ -1,5 +1,4 @@
 .button {
-  margin-top: 36px;
   padding: 12px 36px;
   display: inline-block;
   border: 2px solid $pink;
@@ -15,5 +14,9 @@
   &:hover {
     background-color: $pink;
     color: $white;
+  }
+
+  .section--speakers & {
+    margin-top: 36px;
   }
 }
