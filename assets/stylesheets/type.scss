@@ -1,6 +1,6 @@
 .t-heading {
   display: inline-block;
-  font-weight: $bold;
+  font-family: $heavy;
   background-color: $gray--light;
   color: $blue;
   @media (max-width: 799px) {
@@ -20,7 +20,7 @@
 
 .t-link {
   color: $pink;
-  font-weight: $semibold;
+  font-family: $medium;
   text-decoration: none;
   transition-duration: .25s;
   transition-property: opacity;

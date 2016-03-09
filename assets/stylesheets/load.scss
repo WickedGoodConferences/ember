@@ -14,12 +14,17 @@ $black-50: rgba(0,0,0,.5);
 
 
 
-// FONT WEIGHTS
+// FONTS
 
-$book: 400;
-$semibold: 600;
-$bold: 700;
-$xbold: 800;
+@font-face {font-family: 'AvenirLTStd-Book';src: url('/fonts/2F5256_0_0.eot');src: url('/fonts/2F5256_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F5256_0_0.woff2') format('woff2'),url('/fonts/2F5256_0_0.woff') format('woff'),url('/fonts/2F5256_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-BookOblique';src: url('/fonts/2F5256_2_0.eot');src: url('/fonts/2F5256_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F5256_2_0.woff2') format('woff2'),url('/fonts/2F5256_2_0.woff') format('woff'),url('/fonts/2F5256_2_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Black';src: url('/fonts/2F5256_5_0.eot');src: url('/fonts/2F5256_5_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F5256_5_0.woff2') format('woff2'),url('/fonts/2F5256_5_0.woff') format('woff'),url('/fonts/2F5256_5_0.ttf') format('truetype');}
+@font-face {font-family: 'AvenirLTStd-Heavy';src: url('/fonts/2F5256_B_0.eot');src: url('/fonts/2F5256_B_0.eot?#iefix') format('embedded-opentype'),url('/fonts/2F5256_B_0.woff2') format('woff2'),url('/fonts/2F5256_B_0.woff') format('woff'),url('/fonts/2F5256_B_0.ttf') format('truetype');}
+
+$regular: 'AvenirLTStd-Book', sans-serif;
+$italic: 'AvenirLTStd-BookOblique', sans-serif;
+$medium: 'AvenirLTStd-Heavy', sans-serif;
+$heavy: 'AvenirLTStd-Black', sans-serif;
 
 
 

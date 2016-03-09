@@ -42,7 +42,7 @@
 
 .speaker__heading {
   font-size: 19px;
-  font-weight: $bold;
+  font-family: $heavy;
   line-height: 1.6;
   text-transform: uppercase;
   color: $black;
@@ -51,7 +51,7 @@
 
 .speaker__keynote {
   display: block;
-  font-style: italic;
+  font-family: $italic;
   color: $blue;
 }
 
