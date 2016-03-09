@@ -1,0 +1,25 @@
+.notification {
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: teal;
+  text-align: center;
+  z-index: 1;
+  &.is-showing {
+    animation: slide 5s;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes slide {
+  5%, 95% {
+    transform: translateY(-100%);
+  }
+  10%, 90% {
+    transform: translateY(0);
+  }
+}
