@@ -1,5 +1,4 @@
 .tito-ticket-list {
-  border-top: 2px solid $blue--light;
   @media (max-width: 799px) {
     padding-top: 30px;
   }
@@ -17,11 +16,27 @@
   list-style-type: none;
   @media (max-width: 799px) {
     margin-bottom: 30px;
-    padding-bottom: 24px;
   }
   @media (min-width: 800px) {
     margin-bottom: 42px;
+  }
+}
+
+.tito-ticket {
+  @media (max-width: 799px) {
+    padding-bottom: 24px;
+  }
+  @media (min-width: 800px) {
     padding-bottom: 42px;
+  }
+}
+
+.tito-discount-code {
+  @media (max-width: 799px) {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 800px) {
+    padding-bottom: 32px;
   }
 }
 
@@ -29,7 +44,7 @@
 .tito-discount-code-label {
   margin-bottom: 20px;
   font-size: 19px;
-  font-weight: $semibold;
+  font-family: $medium;
 }
 
 .tito-ticket-name {
@@ -90,7 +105,6 @@
   font-size: 18px;
   font-family: inherit;
   line-height: 36px;
-  text-align: center;
   transition-duration: .25s;
   transition-property: border-color;
   &:focus {
@@ -101,6 +115,7 @@
 
 .tito-ticket-quantity-field {
   width: 44px;
+  text-align: center;
 }
 
 .tito-discount-code-show {
@@ -109,6 +124,7 @@
 
 .tito-discount-code-field {
   margin-top: -43px;
+  padding-left: 10px;
   float: right;
   @media (max-width: 419px) {
     width: 132px;
@@ -128,8 +144,7 @@
   background-color: transparent;
   color: $pink;
   font-size: 18px;
-  font-family: inherit;
-  font-weight: $semibold;
+  font-family: $medium;
   text-decoration: none;
   cursor: pointer;
   transition-duration: .25s;
@@ -148,13 +163,12 @@
 }
 
 .tito-submit {
-  padding: 12px 36px;
+  padding: 14px 36px 10px;
   display: inline-block;
   border: 2px solid $pink;
   background-color: transparent;
   font-size: 16px;
-  font-family: inherit;
-  font-weight: $bold;
+  font-family: $heavy;
   text-transform: uppercase;
   text-decoration: none;
   color: $pink;
