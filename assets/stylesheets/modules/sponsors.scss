@@ -2,14 +2,11 @@
   margin-top: 80px;
 }
 
-.sponsors--very-good,
-.sponsors--good,
-.sponsors--video {
+.sponsors {
   margin-top: 40px;
-}
-
-.sponsors--video {
-  margin-bottom: 60px;
+  &:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 .sponsors__heading {
@@ -50,9 +47,7 @@
       background-position: center 24px;
     }
   }
-  .sponsors--very-good &,
-  .sponsors--good &,
-  .sponsors--video & {
+  .sponsors & {
     margin-right: 40px;
     margin-left: 40px;
     &.is-empty {
@@ -85,16 +80,12 @@
   .sponsors--wicked-good .sponsor__logo.is-empty & {
     padding-top: 122px;
   }
-  .sponsors--very-good &,
-  .sponsors--good &,
-  .sponsors--video & {
+  .sponsors & {
     height: 120px;
     width: 152px;
     font-size: 16px;
   }
-  .sponsors--very-good .sponsor__logo.is-empty &,
-  .sponsors--good .sponsor__logo.is-empty &,
-  .sponsors--video .sponsor__logo.is-empty & {
+  .sponsors .sponsor__logo.is-empty & {
     padding-top: 84px;
   }
 }
