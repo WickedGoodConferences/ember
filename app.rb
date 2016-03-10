@@ -22,7 +22,7 @@ configure do
 end
 
 get "/.well-known/acme-challenge/:id" do
-  "74BAtyhm34DVSSTdorjWbYw4CzdrAXFA5DG5MnZgLUs.hnBafX12zBaGCgOrKNBmq4td_5N3g4XHpA-Vo-BWrhs"
+  "uhuPwgUQ2NaU3CHf_28CgYnuhQUAeAtNqQCdaRzP6wU.hnBafX12zBaGCgOrKNBmq4td_5N3g4XHpA-Vo-BWrhs"
 end
 
 require_relative 'routes/init'
