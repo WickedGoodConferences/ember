@@ -7,9 +7,12 @@ require 'compass'
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 
-# before do
-  # redirect request.url.sub('http', 'https') unless request.secure?
-# end
+if ENV['RACK_ENV'] == 'production'
+  before do
+    redirect request.url.sub('http', 'https') unless request.secure?
+    redirect request.url.sub(/www\./, ''), 301 if request.host =~ /^www/
+  end
+end
 
 configure do
   Compass.configuration do |config|
