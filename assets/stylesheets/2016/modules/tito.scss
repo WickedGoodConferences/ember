@@ -41,9 +41,16 @@
 }
 
 .tito-ticket-name,
+.tito-discount-code-label,
+.tito-ticket-description,
+.tito-ticket-price {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.tito-ticket-name,
 .tito-discount-code-label {
   margin-bottom: 20px;
-  font-size: 19px;
   font-family: $medium;
 }
 
@@ -55,12 +62,6 @@
   display: inline-block;
   position: relative;
   top: 7px;
-}
-
-.tito-ticket-description,
-.tito-ticket-price {
-  font-size: 19px;
-  line-height: 1.6;
 }
 
 .tito-ticket-description {
