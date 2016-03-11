@@ -90,8 +90,12 @@
   }
 }
 
+.sponsor__logo__link svg,
+.sponsor__logo__link img {
+  width: 100%;
+}
+
 .sponsor__logo__link svg {
   position: relative;
   top: 12px;
-  width: 100%;
 }
