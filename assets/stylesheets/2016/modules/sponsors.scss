@@ -33,8 +33,9 @@
 }
 
 .sponsor__logo {
-  display: inline-block;
   margin-bottom: 54px;
+  display: inline-block;
+  position: relative;
   &.is-empty {
     background-image: url(/2016/sponsor.svg);
     background-repeat: no-repeat;
@@ -42,6 +43,8 @@
   .sponsors--wicked-good & {
     margin-right: 24px;
     margin-left: 24px;
+    height: 176px;
+    width: 220px;
     &.is-empty {
       background-size: 55px 86px;
       background-position: center 24px;
@@ -50,6 +53,8 @@
   .sponsors & {
     margin-right: 40px;
     margin-left: 40px;
+    height: 120px;
+    width: 152px;
     &.is-empty {
       background-size: 38px 60px;
       background-position: center 18px;
@@ -59,6 +64,9 @@
 
 .sponsor__logo__link {
   display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
   text-decoration: none;
   color: $blue;
@@ -73,16 +81,12 @@
     background-color: $gray--dark-05;
   }
   .sponsors--wicked-good & {
-    height: 176px;
-    width: 220px;
     font-size: 24px;
   }
   .sponsors--wicked-good .sponsor__logo.is-empty & {
     padding-top: 122px;
   }
   .sponsors & {
-    height: 120px;
-    width: 152px;
     font-size: 16px;
   }
   .sponsors .sponsor__logo.is-empty & {
@@ -96,6 +100,5 @@
 }
 
 .sponsor__logo__link svg {
-  position: relative;
-  top: 12px;
+  height: 100%;
 }
