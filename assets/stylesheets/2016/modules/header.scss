@@ -5,6 +5,9 @@
     box-sizing: border-box;
     position: relative;
   }
+  @media (min-width: 940px) {
+    margin-top: 72px;
+  }
 }
 
 .header__image {

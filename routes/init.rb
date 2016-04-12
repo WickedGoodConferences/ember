@@ -8,3 +8,7 @@ end
 get '/speakers' do
   erb :speakers
 end
+
+get '/policies' do
+  erb :policies
+end
