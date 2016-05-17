@@ -1,20 +1,18 @@
-.speakers {
+.index__speakers {
   @media (min-width: 800px) {
-    margin-top: 70px;
+    margin-top: 34px;
     margin-bottom: 80px;
     overflow: auto;
   }
 }
 
-.speaker {
-  @media (max-width: 799px) {
-    margin-bottom: 42px;
-  }
+.index__speakers .speaker {
+  margin-bottom: 60px;
   @media (min-width: 800px) {
     position: relative;
     width: 33%;
     float: left;
-    &:not(:last-of-type) {
+    &:not(:nth-child(3n)) {
       &:after {
         content: "";
         position: absolute;
@@ -25,7 +23,25 @@
         background-color: $gray;
       }
     }
+    &:nth-child(3n+1) {
+      clear: both;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      margin-left: 33%;
+    }
   }
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.speaker--desc {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 60px;
+  max-width: 620px;
+  list-style-type: none;
 }
 
 .speaker__image {
@@ -45,7 +61,6 @@
   font-family: $heavy;
   line-height: 1.6;
   text-transform: uppercase;
-  color: $black;
   letter-spacing: 1.5px;
 }
 
@@ -55,11 +70,79 @@
   color: $blue;
 }
 
-.speaker .t-text {
+.speaker__intro {
   @media (min-width: 800px) {
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
     width: 80%;
+  }
+}
+
+.speaker__socials {
+  margin-top: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 18px;
+  max-width: 220px;
+  border-top: 1px solid rgba($blue, .2);
+  @media (max-width: 519px){
+    padding-bottom: 34px;
+  }
+  @media (min-width: 520px){
+    padding-bottom: 42px;
+  }
+}
+
+.speaker__social {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  fill: $pink;
+  &:first-of-type {
+    margin-right: 10px;
+  }
+  &:last-of-type {
+    margin-left: 10px;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.speaker__bio,
+.speaker__talk {
+  text-align: left;
+}
+
+.speaker__bio {
+  line-height: 1.7;
+  @media (max-width: 519px) {
+    padding-bottom: 36px;
+    font-size: 18px;
+  }
+  @media (min-width: 520px) {
+    padding-bottom: 50px;
+    font-size: 24px;
+  }
+}
+
+.speaker__talk__title {
+  padding-bottom: 12px;
+  font-size: 19px;
+  font-family: $medium;
+}
+
+.anchor {
+  display: block;
+  visibility: hidden;
+  @media (max-width: 939px) {
+    margin-top: -75px;
+    height: 75px;
+  }
+  @media (min-width: 940px) {
+    margin-top: -100px;
+    height: 100px;
   }
 }

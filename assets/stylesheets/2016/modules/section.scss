@@ -9,6 +9,16 @@
   }
 }
 
+.l-details {
+  margin-bottom: 100px;
+  @media (max-width: 799px) {
+    margin-top: 100px;
+  }
+  @media (min-width: 800px) {
+    margin-top: 148px;
+  }
+}
+
 .section__anchor {
   height: 1px;
   position: absolute;
@@ -26,7 +36,6 @@
     text-align: left;
   }
   @media (min-width: 800px) {
-    margin-top: 36px;
     margin-bottom: 60px;
     font-size: 24px;
   }
