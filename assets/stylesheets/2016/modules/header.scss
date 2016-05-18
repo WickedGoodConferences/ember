@@ -15,7 +15,8 @@
   background-size: cover;
   background-position: center top;
   @media (max-width: 799px) {
-    height: 200px;
+    margin-top: 48px;
+    height: 152px;
   }
   @media (min-width: 800px) {
     position: absolute;
