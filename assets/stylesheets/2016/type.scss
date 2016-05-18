@@ -41,6 +41,9 @@
 .t-text {
   font-size: 19px;
   line-height: 1.7;
+  & + .t-text {
+    margin-top: 16px;
+  }
 }
 
 .t-hidden {
