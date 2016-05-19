@@ -146,6 +146,10 @@ a.speaker__image:hover:after {
     padding-bottom: 50px;
     font-size: 24px;
   }
+
+  & + .speaker__bio {
+    margin-top: -34px;
+  }
 }
 
 .speaker__talk__title {
