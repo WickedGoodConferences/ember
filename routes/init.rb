@@ -9,6 +9,10 @@ get '/speakers' do
   erb :speakers
 end
 
+get '/workshop/advanced-ember' do
+  erb :'workshop/advanced-ember'.to_sym
+end
+
 get '/policies' do
   erb :policies
 end
