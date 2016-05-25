@@ -12,7 +12,7 @@
     position: relative;
     width: 33%;
     float: left;
-    &:not(:nth-child(3n)) {
+    &:not(:nth-child(3n)):not(:last-child) {
       &:after {
         content: "";
         position: absolute;
@@ -25,6 +25,9 @@
     }
     &:nth-child(3n+1) {
       clear: both;
+    }
+    &:last-child {
+      margin-left: 33%;
     }
   }
 }
