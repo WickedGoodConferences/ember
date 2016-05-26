@@ -46,6 +46,20 @@
   }
 }
 
+li.t-text {
+  padding-left: 24px;
+  &:last-child {
+    padding-bottom: 36px;
+  }
+
+  &:before {
+    content: "•";
+    margin-right: 16px;
+    margin-left: -25px;
+    color: $gray;
+  }
+}
+
 .t-hidden {
   position: absolute !important;
   height: 1px;
@@ -61,4 +75,8 @@
 
 .t-medium {
   font-family: $medium;
+}
+
+.t-left {
+  text-align: left;
 }
