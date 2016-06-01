@@ -13,6 +13,10 @@ get '/workshops/advanced-ember' do
   erb :'workshops/advanced-ember'.to_sym
 end
 
+get '/faq' do
+  erb :faq
+end
+
 get '/policies' do
   erb :policies
 end
