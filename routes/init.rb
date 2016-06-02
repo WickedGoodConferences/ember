@@ -17,6 +17,10 @@ get '/workshops/contributor' do
   erb :'workshops/contributor'.to_sym
 end
 
+get '/lodging' do
+  erb :lodging
+end
+
 get '/faq' do
   erb :faq
 end

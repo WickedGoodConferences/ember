@@ -1,0 +1,8 @@
+.lodging__images {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.lodging__image:not(:last-child) {
+  margin-bottom: 24px;
+}
